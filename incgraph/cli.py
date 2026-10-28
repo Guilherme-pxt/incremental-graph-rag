@@ -25,6 +25,8 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("run", help="ingest, build, answer every question with every system, evaluate, report")
     s = sub.add_parser("eval", help="the same as run, replaying the cache; any cache miss is an error")
     s.add_argument("--allow-miss", action="store_true", help="call the model on a cache miss instead of failing")
+    s = sub.add_parser("form-eval", help="fourth run: the closed-form parser on data/heldout.jsonl and the 81 questions")
+    s.add_argument("--offline", action="store_true", help="replay the cache only; any miss is an error")
     sub.add_parser("report", help="rebuild results/report.md from the result files, no model calls")
     sub.add_parser("run-all", help="synth, then run")
 
@@ -55,6 +57,12 @@ def main(argv: list[str] | None = None) -> int:
             if args.command == "eval" and not args.allow_miss:
                 m.allow_miss = False
             P.run(cfg, m, run_cfg["results_dir"], run_cfg["data_dir"])
+            m.close()
+        elif args.command == "form-eval":
+            from .formeval import evaluate
+            m = llm()
+            m.allow_miss = not args.offline
+            print(json.dumps(evaluate(cfg, m, run_cfg["data_dir"], run_cfg["results_dir"])["heldout"]["form"]))
             m.close()
         elif args.command == "report":
             from .report import write_report

@@ -1,0 +1,216 @@
+{
+ "form_calls": 139,
+ "heldout": {
+  "fallback_ids": [
+   "h43"
+  ],
+  "fallback_rate": 0.021739130434782608,
+  "false_trigger_rate": 0.0,
+  "false_triggers": [],
+  "form": {
+   "accuracy": 0.8103448275862069,
+   "accuracy_en": 0.8108108108108109,
+   "accuracy_must_not_parse": 0.9166666666666666,
+   "accuracy_must_parse": 0.782608695652174,
+   "accuracy_pt": 0.8095238095238095,
+   "accuracy_pt_must_parse": 0.8125,
+   "ci95": [
+    0.7068965517241379,
+    0.9137931034482759
+   ]
+  },
+  "form_exact_match": 0.8043478260869565,
+  "form_exact_match_lenient_ops": 0.8043478260869565,
+  "form_exact_match_pt": 0.8125,
+  "hybrid": {
+   "accuracy": 0.3275862068965517,
+   "accuracy_en": 0.32432432432432434,
+   "accuracy_must_not_parse": 0.9166666666666666,
+   "accuracy_must_parse": 0.17391304347826086,
+   "accuracy_pt": 0.3333333333333333,
+   "accuracy_pt_must_parse": 0.1875,
+   "ci95": [
+    0.20689655172413793,
+    0.4482758620689655
+   ]
+  },
+  "must_not_parse": 12,
+  "must_parse": 46,
+  "n": 58,
+  "paired": {
+   "form vs hybrid": {
+    "ci95": [
+     0.3448275862068966,
+     0.6206896551724138
+    ],
+    "delta": 0.48275862068965514,
+    "excludes_zero": true,
+    "n": 58
+   },
+   "form vs patterns": {
+    "ci95": [
+     0.25862068965517243,
+     0.5689655172413793
+    ],
+    "delta": 0.4137931034482758,
+    "excludes_zero": true,
+    "n": 58
+   },
+   "patterns vs hybrid": {
+    "ci95": [
+     -0.05172413793103448,
+     0.1896551724137931
+    ],
+    "delta": 0.06896551724137934,
+    "excludes_zero": false,
+    "n": 58
+   }
+  },
+  "paired_must_parse": {
+   "form vs hybrid": {
+    "ci95": [
+     0.43478260869565216,
+     0.7608695652173914
+    ],
+    "delta": 0.6086956521739131,
+    "excludes_zero": true,
+    "n": 46
+   },
+   "form vs patterns": {
+    "ci95": [
+     0.32608695652173914,
+     0.6956521739130435
+    ],
+    "delta": 0.5217391304347827,
+    "excludes_zero": true,
+    "n": 46
+   }
+  },
+  "patterns": {
+   "accuracy": 0.39655172413793105,
+   "accuracy_en": 0.40540540540540543,
+   "accuracy_must_not_parse": 0.9166666666666666,
+   "accuracy_must_parse": 0.2608695652173913,
+   "accuracy_pt": 0.38095238095238093,
+   "accuracy_pt_must_parse": 0.25,
+   "ci95": [
+    0.27586206896551724,
+    0.5172413793103449
+   ]
+  },
+  "patterns_matched_must_parse": 0,
+  "triggered_exact_but_answer_wrong": [
+   "h23"
+  ],
+  "triggered_not_exact_but_answer_right": [],
+  "wrong_but_confident": 8,
+  "wrong_but_confident_ids": [
+   "h03",
+   "h04",
+   "h21",
+   "h25",
+   "h33",
+   "h40",
+   "h50",
+   "h51"
+  ],
+  "wrong_but_confident_rate_of_triggered": 0.17777777777777778
+ },
+ "original": {
+  "accuracy": 0.8641975308641975,
+  "broken": [
+   "a-q03",
+   "a-q07",
+   "a-q12",
+   "b-q07",
+   "b-q12",
+   "c-q03",
+   "c-q07"
+  ],
+  "ci95": [
+   0.7901234567901234,
+   0.9382716049382716
+  ],
+  "fallback_rate_structured": 0.0,
+  "false_trigger_rate_other": 0.11666666666666667,
+  "false_triggers": [
+   "a-q03",
+   "a-q07",
+   "a-q12",
+   "b-q07",
+   "b-q12",
+   "c-q03",
+   "c-q07"
+  ],
+  "fixed": [],
+  "n": 81,
+  "paired vs hybrid": {
+   "ci95": [
+    0.1111111111111111,
+    0.37037037037037035
+   ],
+   "delta": 0.24691358024691357,
+   "excludes_zero": true,
+   "n": 81
+  },
+  "paired vs third run": {
+   "ci95": [
+    -0.14814814814814814,
+    -0.037037037037037035
+   ],
+   "delta": -0.0864197530864198,
+   "excludes_zero": true,
+   "n": 81
+  },
+  "per_type": {
+   "aggregation": {
+    "form": 1.0,
+    "n": 9,
+    "third_run": 1.0
+   },
+   "as_of": {
+    "form": 0.5,
+    "n": 12,
+    "third_run": 0.6666666666666666
+   },
+   "isolation": {
+    "form": 1.0,
+    "n": 9,
+    "third_run": 1.0
+   },
+   "multi_hop": {
+    "form": 1.0,
+    "n": 12,
+    "third_run": 1.0
+   },
+   "single_hop": {
+    "form": 0.8666666666666667,
+    "n": 15,
+    "third_run": 1.0
+   },
+   "temporal_current": {
+    "form": 0.8,
+    "n": 15,
+    "third_run": 1.0
+   },
+   "unanswerable": {
+    "form": 1.0,
+    "n": 9,
+    "third_run": 1.0
+   }
+  },
+  "third_run_accuracy": 0.9506172839506173,
+  "wrong_but_confident": [
+   "a-q03",
+   "a-q07",
+   "a-q12",
+   "b-q07",
+   "b-q12",
+   "c-q03",
+   "c-q07"
+  ]
+ },
+ "uncached_calls": 318,
+ "uncached_s": 859.097478497366,
+ "wall_s": 865.3615699170041
+}

@@ -1,0 +1,198 @@
+{
+ "form_calls": 139,
+ "heldout": {
+  "fallback_ids": [
+   "h43"
+  ],
+  "fallback_rate": 0.021739130434782608,
+  "false_trigger_rate": 0.0,
+  "false_triggers": [],
+  "form": {
+   "accuracy": 0.8620689655172413,
+   "accuracy_en": 0.8648648648648649,
+   "accuracy_must_not_parse": 0.9166666666666666,
+   "accuracy_must_parse": 0.8478260869565217,
+   "accuracy_pt": 0.8571428571428571,
+   "accuracy_pt_must_parse": 0.875,
+   "ci95": [
+    0.7758620689655172,
+    0.9482758620689655
+   ]
+  },
+  "form_exact_match": 0.8913043478260869,
+  "form_exact_match_lenient_ops": 0.8913043478260869,
+  "form_exact_match_pt": 0.875,
+  "hybrid": {
+   "accuracy": 0.3275862068965517,
+   "accuracy_en": 0.32432432432432434,
+   "accuracy_must_not_parse": 0.9166666666666666,
+   "accuracy_must_parse": 0.17391304347826086,
+   "accuracy_pt": 0.3333333333333333,
+   "accuracy_pt_must_parse": 0.1875,
+   "ci95": [
+    0.20689655172413793,
+    0.4482758620689655
+   ]
+  },
+  "must_not_parse": 12,
+  "must_parse": 46,
+  "n": 58,
+  "paired": {
+   "form vs hybrid": {
+    "ci95": [
+     0.41379310344827586,
+     0.6551724137931034
+    ],
+    "delta": 0.5344827586206896,
+    "excludes_zero": true,
+    "n": 58
+   },
+   "form vs patterns": {
+    "ci95": [
+     0.3275862068965517,
+     0.603448275862069
+    ],
+    "delta": 0.4655172413793103,
+    "excludes_zero": true,
+    "n": 58
+   },
+   "patterns vs hybrid": {
+    "ci95": [
+     -0.05172413793103448,
+     0.1896551724137931
+    ],
+    "delta": 0.06896551724137934,
+    "excludes_zero": false,
+    "n": 58
+   }
+  },
+  "paired_must_parse": {
+   "form vs hybrid": {
+    "ci95": [
+     0.5434782608695652,
+     0.8043478260869565
+    ],
+    "delta": 0.6739130434782609,
+    "excludes_zero": true,
+    "n": 46
+   },
+   "form vs patterns": {
+    "ci95": [
+     0.43478260869565216,
+     0.7391304347826086
+    ],
+    "delta": 0.5869565217391304,
+    "excludes_zero": true,
+    "n": 46
+   }
+  },
+  "patterns": {
+   "accuracy": 0.39655172413793105,
+   "accuracy_en": 0.40540540540540543,
+   "accuracy_must_not_parse": 0.9166666666666666,
+   "accuracy_must_parse": 0.2608695652173913,
+   "accuracy_pt": 0.38095238095238093,
+   "accuracy_pt_must_parse": 0.25,
+   "ci95": [
+    0.27586206896551724,
+    0.5172413793103449
+   ]
+  },
+  "patterns_matched_must_parse": 0,
+  "triggered_exact_but_answer_wrong": [
+   "h23",
+   "h25"
+  ],
+  "triggered_not_exact_but_answer_right": [],
+  "wrong_but_confident": 4,
+  "wrong_but_confident_ids": [
+   "h03",
+   "h04",
+   "h33",
+   "h51"
+  ],
+  "wrong_but_confident_rate_of_triggered": 0.08888888888888889
+ },
+ "original": {
+  "accuracy": 0.9259259259259259,
+  "broken": [
+   "a-q03",
+   "c-q03"
+  ],
+  "ci95": [
+   0.8641975308641975,
+   0.9753086419753086
+  ],
+  "fallback_rate_structured": 0.0,
+  "false_trigger_rate_other": 0.03333333333333333,
+  "false_triggers": [
+   "a-q03",
+   "c-q03"
+  ],
+  "fixed": [],
+  "n": 81,
+  "paired vs hybrid": {
+   "ci95": [
+    0.18518518518518517,
+    0.43209876543209874
+   ],
+   "delta": 0.308641975308642,
+   "excludes_zero": true,
+   "n": 81
+  },
+  "paired vs third run": {
+   "ci95": [
+    -0.06172839506172839,
+    0.0
+   ],
+   "delta": -0.024691358024691357,
+   "excludes_zero": false,
+   "n": 81
+  },
+  "per_type": {
+   "aggregation": {
+    "form": 1.0,
+    "n": 9,
+    "third_run": 1.0
+   },
+   "as_of": {
+    "form": 0.6666666666666666,
+    "n": 12,
+    "third_run": 0.6666666666666666
+   },
+   "isolation": {
+    "form": 1.0,
+    "n": 9,
+    "third_run": 1.0
+   },
+   "multi_hop": {
+    "form": 1.0,
+    "n": 12,
+    "third_run": 1.0
+   },
+   "single_hop": {
+    "form": 0.8666666666666667,
+    "n": 15,
+    "third_run": 1.0
+   },
+   "temporal_current": {
+    "form": 1.0,
+    "n": 15,
+    "third_run": 1.0
+   },
+   "unanswerable": {
+    "form": 1.0,
+    "n": 9,
+    "third_run": 1.0
+   }
+  },
+  "third_run_accuracy": 0.9506172839506173,
+  "wrong_but_confident": [
+   "a-q03",
+   "c-q03"
+  ]
+ },
+ "uncached_calls": 4,
+ "uncached_s": 5.552227541047614,
+ "wall_s": 5.886798541992903
+}
