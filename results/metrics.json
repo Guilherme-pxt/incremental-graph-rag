@@ -11,19 +11,19 @@
   },
   "incremental_graph vs batch_graph": {
    "ci95": [
-    0.14814814814814814,
-    0.3950617283950617
+    0.2345679012345679,
+    0.4567901234567901
    ],
-   "delta": 0.2716049382716049,
+   "delta": 0.345679012345679,
    "excludes_zero": true,
    "n": 81
   },
   "incremental_graph vs hybrid": {
    "ci95": [
-    0.16049382716049382,
-    0.37037037037037035
+    0.2222222222222222,
+    0.4444444444444444
    ],
-   "delta": 0.2592592592592593,
+   "delta": 0.33333333333333337,
    "excludes_zero": true,
    "n": 81
   }
@@ -70,23 +70,23 @@
    "wrong_period_rate_as_of": 0.25
   },
   "incremental_graph": {
-   "accuracy": 0.8765432098765432,
-   "answerable_accuracy": 0.8412698412698413,
+   "accuracy": 0.9506172839506173,
+   "answerable_accuracy": 0.9365079365079365,
    "ci95": [
-    0.8024691358024691,
-    0.9382716049382716
+    0.9012345679012346,
+    0.9876543209876543
    ],
    "declined_isolation": 1.0,
    "declined_unanswerable": 1.0,
    "false_idk_rate": 0.06349206349206349,
    "isolation_confusions": 0,
    "isolation_leaks": 0,
-   "median_answer_latency_s": 2.9489167080027983,
-   "median_prompt_tokens": 1140,
+   "median_answer_latency_s": 2.7651212500059046,
+   "median_prompt_tokens": 905,
    "n": 81,
    "n_now_with_history": 21,
    "stale_rate_now": 0.0,
-   "supported_share_of_correct": 0.9811320754716981,
+   "supported_share_of_correct": 0.9830508474576272,
    "wrong_period_rate_as_of": 0.0
   }
  },
@@ -153,7 +153,7 @@
   },
   "incremental_graph": {
    "aggregation": {
-    "accuracy": 0.3333333333333333,
+    "accuracy": 1.0,
     "n": 9
    },
    "as_of": {
@@ -251,11 +251,11 @@
   "incremental_graph vs batch_graph": {
    "aggregation": {
     "ci95": [
-     -0.4444444444444444,
-     0.2222222222222222
+     0.2222222222222222,
+     0.8888888888888888
     ],
-    "delta": -0.1111111111111111,
-    "excludes_zero": false,
+    "delta": 0.5555555555555556,
+    "excludes_zero": true,
     "n": 9
    },
    "as_of": {
@@ -316,10 +316,10 @@
   "incremental_graph vs hybrid": {
    "aggregation": {
     "ci95": [
-     0.1111111111111111,
-     0.6666666666666666
+     1.0,
+     1.0
     ],
-    "delta": 0.3333333333333333,
+    "delta": 1.0,
     "excludes_zero": true,
     "n": 9
    },

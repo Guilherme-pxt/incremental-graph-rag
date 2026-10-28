@@ -1,0 +1,387 @@
+{
+ "paired": {
+  "batch_graph vs hybrid": {
+   "ci95": [
+    -0.09876543209876543,
+    0.08641975308641975
+   ],
+   "delta": -0.012345679012345623,
+   "excludes_zero": false,
+   "n": 81
+  },
+  "incremental_graph vs batch_graph": {
+   "ci95": [
+    0.14814814814814814,
+    0.3950617283950617
+   ],
+   "delta": 0.2716049382716049,
+   "excludes_zero": true,
+   "n": 81
+  },
+  "incremental_graph vs hybrid": {
+   "ci95": [
+    0.16049382716049382,
+    0.37037037037037035
+   ],
+   "delta": 0.2592592592592593,
+   "excludes_zero": true,
+   "n": 81
+  }
+ },
+ "per_system": {
+  "batch_graph": {
+   "accuracy": 0.6049382716049383,
+   "answerable_accuracy": 0.49206349206349204,
+   "ci95": [
+    0.49382716049382713,
+    0.7160493827160493
+   ],
+   "declined_isolation": 1.0,
+   "declined_unanswerable": 1.0,
+   "false_idk_rate": 0.15873015873015872,
+   "isolation_confusions": 0,
+   "isolation_leaks": 0,
+   "median_answer_latency_s": 5.73074795800494,
+   "median_prompt_tokens": 1260,
+   "n": 81,
+   "n_now_with_history": 21,
+   "stale_rate_now": 0.3333333333333333,
+   "supported_share_of_correct": 1.0,
+   "wrong_period_rate_as_of": 0.08333333333333333
+  },
+  "hybrid": {
+   "accuracy": 0.6172839506172839,
+   "answerable_accuracy": 0.5079365079365079,
+   "ci95": [
+    0.5061728395061729,
+    0.7160493827160493
+   ],
+   "declined_isolation": 1.0,
+   "declined_unanswerable": 1.0,
+   "false_idk_rate": 0.06349206349206349,
+   "isolation_confusions": 0,
+   "isolation_leaks": 0,
+   "median_answer_latency_s": 4.945854541001609,
+   "median_prompt_tokens": 714,
+   "n": 81,
+   "n_now_with_history": 21,
+   "stale_rate_now": 0.047619047619047616,
+   "supported_share_of_correct": 0.96875,
+   "wrong_period_rate_as_of": 0.25
+  },
+  "incremental_graph": {
+   "accuracy": 0.8765432098765432,
+   "answerable_accuracy": 0.8412698412698413,
+   "ci95": [
+    0.8024691358024691,
+    0.9382716049382716
+   ],
+   "declined_isolation": 1.0,
+   "declined_unanswerable": 1.0,
+   "false_idk_rate": 0.06349206349206349,
+   "isolation_confusions": 0,
+   "isolation_leaks": 0,
+   "median_answer_latency_s": 2.9489167080027983,
+   "median_prompt_tokens": 1140,
+   "n": 81,
+   "n_now_with_history": 21,
+   "stale_rate_now": 0.0,
+   "supported_share_of_correct": 0.9811320754716981,
+   "wrong_period_rate_as_of": 0.0
+  }
+ },
+ "per_type": {
+  "batch_graph": {
+   "aggregation": {
+    "accuracy": 0.4444444444444444,
+    "n": 9
+   },
+   "as_of": {
+    "accuracy": 0.25,
+    "n": 12
+   },
+   "isolation": {
+    "accuracy": 1.0,
+    "n": 9
+   },
+   "multi_hop": {
+    "accuracy": 0.0,
+    "n": 12
+   },
+   "single_hop": {
+    "accuracy": 0.9333333333333333,
+    "n": 15
+   },
+   "temporal_current": {
+    "accuracy": 0.6666666666666666,
+    "n": 15
+   },
+   "unanswerable": {
+    "accuracy": 1.0,
+    "n": 9
+   }
+  },
+  "hybrid": {
+   "aggregation": {
+    "accuracy": 0.0,
+    "n": 9
+   },
+   "as_of": {
+    "accuracy": 0.3333333333333333,
+    "n": 12
+   },
+   "isolation": {
+    "accuracy": 1.0,
+    "n": 9
+   },
+   "multi_hop": {
+    "accuracy": 0.08333333333333333,
+    "n": 12
+   },
+   "single_hop": {
+    "accuracy": 0.8666666666666667,
+    "n": 15
+   },
+   "temporal_current": {
+    "accuracy": 0.9333333333333333,
+    "n": 15
+   },
+   "unanswerable": {
+    "accuracy": 1.0,
+    "n": 9
+   }
+  },
+  "incremental_graph": {
+   "aggregation": {
+    "accuracy": 0.3333333333333333,
+    "n": 9
+   },
+   "as_of": {
+    "accuracy": 0.6666666666666666,
+    "n": 12
+   },
+   "isolation": {
+    "accuracy": 1.0,
+    "n": 9
+   },
+   "multi_hop": {
+    "accuracy": 1.0,
+    "n": 12
+   },
+   "single_hop": {
+    "accuracy": 1.0,
+    "n": 15
+   },
+   "temporal_current": {
+    "accuracy": 1.0,
+    "n": 15
+   },
+   "unanswerable": {
+    "accuracy": 1.0,
+    "n": 9
+   }
+  }
+ },
+ "per_type_paired": {
+  "batch_graph vs hybrid": {
+   "aggregation": {
+    "ci95": [
+     0.1111111111111111,
+     0.7777777777777778
+    ],
+    "delta": 0.4444444444444444,
+    "excludes_zero": true,
+    "n": 9
+   },
+   "as_of": {
+    "ci95": [
+     -0.4166666666666667,
+     0.25
+    ],
+    "delta": -0.08333333333333331,
+    "excludes_zero": false,
+    "n": 12
+   },
+   "isolation": {
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "delta": 0.0,
+    "excludes_zero": false,
+    "n": 9
+   },
+   "multi_hop": {
+    "ci95": [
+     -0.25,
+     0.0
+    ],
+    "delta": -0.08333333333333333,
+    "excludes_zero": false,
+    "n": 12
+   },
+   "single_hop": {
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "delta": 0.06666666666666665,
+    "excludes_zero": false,
+    "n": 15
+   },
+   "temporal_current": {
+    "ci95": [
+     -0.5333333333333333,
+     -0.06666666666666667
+    ],
+    "delta": -0.2666666666666667,
+    "excludes_zero": true,
+    "n": 15
+   },
+   "unanswerable": {
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "delta": 0.0,
+    "excludes_zero": false,
+    "n": 9
+   }
+  },
+  "incremental_graph vs batch_graph": {
+   "aggregation": {
+    "ci95": [
+     -0.4444444444444444,
+     0.2222222222222222
+    ],
+    "delta": -0.1111111111111111,
+    "excludes_zero": false,
+    "n": 9
+   },
+   "as_of": {
+    "ci95": [
+     0.0,
+     0.8333333333333334
+    ],
+    "delta": 0.41666666666666663,
+    "excludes_zero": false,
+    "n": 12
+   },
+   "isolation": {
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "delta": 0.0,
+    "excludes_zero": false,
+    "n": 9
+   },
+   "multi_hop": {
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "delta": 1.0,
+    "excludes_zero": true,
+    "n": 12
+   },
+   "single_hop": {
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "delta": 0.06666666666666665,
+    "excludes_zero": false,
+    "n": 15
+   },
+   "temporal_current": {
+    "ci95": [
+     0.13333333333333333,
+     0.6
+    ],
+    "delta": 0.33333333333333337,
+    "excludes_zero": true,
+    "n": 15
+   },
+   "unanswerable": {
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "delta": 0.0,
+    "excludes_zero": false,
+    "n": 9
+   }
+  },
+  "incremental_graph vs hybrid": {
+   "aggregation": {
+    "ci95": [
+     0.1111111111111111,
+     0.6666666666666666
+    ],
+    "delta": 0.3333333333333333,
+    "excludes_zero": true,
+    "n": 9
+   },
+   "as_of": {
+    "ci95": [
+     -0.08333333333333333,
+     0.75
+    ],
+    "delta": 0.3333333333333333,
+    "excludes_zero": false,
+    "n": 12
+   },
+   "isolation": {
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "delta": 0.0,
+    "excludes_zero": false,
+    "n": 9
+   },
+   "multi_hop": {
+    "ci95": [
+     0.75,
+     1.0
+    ],
+    "delta": 0.9166666666666666,
+    "excludes_zero": true,
+    "n": 12
+   },
+   "single_hop": {
+    "ci95": [
+     0.0,
+     0.3333333333333333
+    ],
+    "delta": 0.1333333333333333,
+    "excludes_zero": false,
+    "n": 15
+   },
+   "temporal_current": {
+    "ci95": [
+     0.0,
+     0.2
+    ],
+    "delta": 0.06666666666666665,
+    "excludes_zero": false,
+    "n": 15
+   },
+   "unanswerable": {
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "delta": 0.0,
+    "excludes_zero": false,
+    "n": 9
+   }
+  }
+ },
+ "shared_index_probe": {
+  "declined": 0,
+  "leaks": 8,
+  "n": 9
+ }
+}

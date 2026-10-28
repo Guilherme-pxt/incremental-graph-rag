@@ -14,6 +14,17 @@ multi-hop forms the question generator writes (``questions.py``):
 * which of my clients are currently interested in a building near <station> station?
 * which of my clients looking for <n> bedrooms can afford a building delivered in <year> near <station> station?
 
+Third run: the aggregation questions get the same treatment. The graph side
+is general (``value_at``, ``count_where`` and ``extreme`` work for any entity
+type and any single-valued predicate, at any date, respecting
+``valid_from``/``valid_to``); the recognizer is not. It covers the forms the
+generator writes, with a little slack (above/below/over/under, highest/lowest,
+"right now" or "on <date>"):
+
+* how many of my clients want <n> bedrooms right now?
+* how many of my clients have a budget above $<amount> right now?
+* which of my clients has the highest budget right now?
+
 A question that matches no form, or whose client or station cannot be linked
 to exactly one node, takes the ordinary retrieval path.
 """
@@ -22,7 +33,7 @@ from __future__ import annotations
 
 import re
 
-from .values import norm_name
+from .values import money_amounts, months_in, norm_name
 
 _CHAIN = re.compile(r"^(who develops|which metro station is near) the building (.+?) is "
                     r"(?:interested in|focused on) now\??$", re.IGNORECASE)
@@ -30,6 +41,30 @@ _NEAR = re.compile(r"^which of my clients are currently interested in a building
                    re.IGNORECASE)
 _FIT = re.compile(r"^which of my clients looking for (\d+) bedrooms? can afford a building delivered in "
                   r"(20\d\d) near (.+?) station\??$", re.IGNORECASE)
+
+
+_WHEN = r"(?:\s+(right now|now|today|on ([A-Za-z]+ \d{1,2}, 20\d\d|20\d\d-\d\d-\d\d)))?"
+_COUNT_BEDS = re.compile(r"^how many of my clients (?:want|need|are looking for) (\d+) bedrooms?" + _WHEN + r"\??$",
+                         re.IGNORECASE)
+_COUNT_BUDGET = re.compile(r"^how many of my clients have a budget (above|over|below|under) (\$?[\d,.]+\s*k?)"
+                           + _WHEN + r"\??$", re.IGNORECASE)
+_EXTREME = re.compile(r"^which of my clients has the (highest|largest|biggest|lowest|smallest) budget" + _WHEN
+                      + r"\??$", re.IGNORECASE)
+_MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
+           "november", "december"]
+
+
+def _date(when: str | None) -> str | None:
+    """'March 21, 2026' or '2026-03-21' -> '2026-03-21'; None (now) for 'right now' or no date."""
+    if not when:
+        return None
+    m = re.match(r"^(20\d\d-\d\d-\d\d)$", when)
+    if m:
+        return m.group(1)
+    m = re.match(r"^([A-Za-z]+) (\d{1,2}), (20\d\d)$", when)
+    if m and m.group(1).lower() in _MONTHS:
+        return f"{m.group(3)}-{_MONTHS.index(m.group(1).lower()) + 1:02d}-{int(m.group(2)):02d}"
+    return None
 
 
 class Query:
@@ -42,6 +77,61 @@ class Query:
     def one(self, nid: str, pred: str) -> dict | None:
         es = self.current(nid, pred)
         return es[0] if len(es) == 1 else None
+
+    # ---------------------------------------------------- general graph operations
+
+    def value_at(self, nid: str, pred: str, at: str | None = None) -> dict | None:
+        """The one edge of a single-valued predicate that holds at date ``at`` (None = now: the open edge)."""
+        es = [e for e in self.g.edges_of(nid) if e["src"] == nid and e["pred"] == pred and (
+            e["valid_to"] is None if at is None else e["valid_from"] <= at and (e["valid_to"] is None or at < e["valid_to"]))]
+        return es[0] if len(es) == 1 else None
+
+    def count_where(self, etype: str, pred: str, test, at: str | None = None) -> tuple[list[str], list[dict]]:
+        """Nodes of ``etype`` whose value of ``pred`` at ``at`` passes ``test``; with the edges that decided it."""
+        hits, ev = [], []
+        for nid in self.g.of_type(etype):
+            e = self.value_at(nid, pred, at)
+            if e is not None and test(e["value"] if e["dst"] is None else e["dst"]):
+                hits.append(nid)
+                ev.append(e)
+        return hits, ev
+
+    def extreme(self, etype: str, pred: str, highest: bool = True, at: str | None = None) -> tuple[list[str], list[dict]]:
+        """Nodes of ``etype`` with the highest (or lowest) numeric ``pred`` at ``at``; ties all returned."""
+        vals = [(nid, e) for nid in self.g.of_type(etype) for e in [self.value_at(nid, pred, at)]
+                if e is not None and isinstance(e["value"], (int, float))]
+        if not vals:
+            return [], []
+        best = (max if highest else min)(e["value"] for _, e in vals)
+        top = [(n, e) for n, e in vals if e["value"] == best]
+        return [n for n, _ in top], [e for _, e in top]
+
+    def aggregate(self, q: str) -> tuple[str, list[dict], str] | None:
+        names = lambda ids: ", ".join(self.g.nodes[n]["name"] for n in ids)
+        m = _COUNT_BEDS.match(q)
+        if m:
+            n, at = int(m.group(1)), _date(m.group(3))
+            hits, ev = self.count_where("client", "bedrooms", lambda v: v == n, at)
+            return (f"count of clients wanting {n} bedrooms {('on ' + at) if at else 'now'}", ev,
+                    f"{len(hits)} ({names(hits)})" if hits else "0")
+        m = _COUNT_BUDGET.match(q)
+        if m:
+            amounts = money_amounts(m.group(2))
+            if not amounts:
+                return None
+            cut, above, at = amounts[0], m.group(1).lower() in ("above", "over"), _date(m.group(4))
+            hits, ev = self.count_where("client", "budget", (lambda v: v > cut) if above else (lambda v: v < cut), at)
+            return (f"count of clients with a budget {'above' if above else 'below'} ${cut:,} "
+                    f"{('on ' + at) if at else 'now'}", ev, f"{len(hits)} ({names(hits)})" if hits else "0")
+        m = _EXTREME.match(q)
+        if m:
+            highest, at = m.group(1).lower() in ("highest", "largest", "biggest"), _date(m.group(3))
+            top, ev = self.extreme("client", "budget", highest, at)
+            if not top:
+                return None
+            return (f"client with the {'highest' if highest else 'lowest'} budget {('on ' + at) if at else 'now'}",
+                    ev, names(top))
+        return None
 
     def node_by_name(self, name: str, etype: str) -> str | None:
         from .retrieve import link
@@ -56,6 +146,9 @@ class Query:
     def run(self, question: str) -> tuple[str, list[dict], str] | None:
         """(question form, evidence edges, result text), or None to fall back to retrieval."""
         q = question.strip()
+        agg = self.aggregate(q)
+        if agg is not None:
+            return agg
         m = _CHAIN.match(q)
         if m:
             client = self.node_by_name(m.group(2), "client")

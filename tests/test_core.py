@@ -229,3 +229,51 @@ class LLMTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AggregationQueryTests(unittest.TestCase):
+    """The aggregation step of query.py on a hand-built temporal graph."""
+
+    def setUp(self):
+        from incgraph.query import Query
+        g = Graph("a", temporal=True)
+        self.kate = g.add_node("client", "Kate Moreau", "a-001")
+        self.ruth = g.add_node("client", "Ruth Castellano", "a-002")
+        self.jo = g.add_node("client", "Jonah Pellegrini", "a-003")
+        g.assert_fact(self.kate, "budget", 800000, "a-001", "2026-01-10")
+        g.assert_fact(self.kate, "budget", 950000, "a-010", "2026-03-01")   # raised later
+        g.assert_fact(self.ruth, "budget", 900000, "a-002", "2026-01-12")
+        g.assert_fact(self.jo, "budget", 950000, "a-003", "2026-01-15")
+        for c, n in ((self.kate, 2), (self.ruth, 3), (self.jo, 3)):
+            g.assert_fact(c, "bedrooms", n, "a-004", "2026-01-20")
+        g.assert_fact(self.jo, "bedrooms", 2, "a-011", "2026-04-01")         # changed later
+        self.q = Query(g)
+
+    def test_value_at_respects_validity(self):
+        self.assertEqual(self.q.value_at(self.kate, "budget")["value"], 950000)
+        self.assertEqual(self.q.value_at(self.kate, "budget", "2026-02-01")["value"], 800000)
+        self.assertEqual(self.q.value_at(self.kate, "budget", "2026-03-01")["value"], 950000)  # valid_to is exclusive
+        self.assertIsNone(self.q.value_at(self.kate, "budget", "2026-01-01"))  # before it was stated
+
+    def test_count_where_now_and_as_of(self):
+        now, ev = self.q.count_where("client", "bedrooms", lambda v: v == 3)
+        self.assertEqual(now, [self.ruth])
+        self.assertEqual([e["episodes"] for e in ev], [["a-004"]])
+        then, _ = self.q.count_where("client", "bedrooms", lambda v: v == 3, "2026-02-15")
+        self.assertEqual(then, [self.ruth, self.jo])
+
+    def test_extreme_returns_ties_and_uses_the_date(self):
+        top, ev = self.q.extreme("client", "budget", highest=True)
+        self.assertEqual(top, [self.kate, self.jo])
+        self.assertEqual(len(ev), 2)
+        self.assertEqual(self.q.extreme("client", "budget", highest=True, at="2026-02-01")[0], [self.jo])
+        self.assertEqual(self.q.extreme("client", "budget", highest=False, at="2026-02-01")[0], [self.kate])
+
+    def test_recognized_forms(self):
+        out = self.q.run("How many of my clients want 3 bedrooms right now?")
+        self.assertEqual(out[2], "1 (Ruth Castellano)")
+        self.assertTrue(self.q.run("How many of my clients want 3 bedrooms on February 15, 2026?")[2].startswith("2 "))
+        self.assertTrue(self.q.run("How many of my clients have a budget above $900,000 right now?")[2].startswith("2 "))
+        self.assertTrue(self.q.run("How many of my clients have a budget under 900k?")[2].startswith("0"))
+        self.assertEqual(self.q.run("Which of my clients has the lowest budget right now?")[2], "Ruth Castellano")
+        self.assertIsNone(self.q.run("How many buildings deliver in 2027?"))  # not a covered form: retrieval path

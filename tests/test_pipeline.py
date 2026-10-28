@@ -142,12 +142,12 @@ class RetrievalTests(unittest.TestCase):
             out = Query(self.ig.graph).run(q["question"]) if q["broker"] == "a" else None
             if q["broker"] != "a":
                 continue
-            self.assertEqual(out is not None, q["type"] == "multi_hop", q["id"])
+            self.assertEqual(out is not None, q["type"] in ("multi_hop", "aggregation"), q["id"])
             if out:
                 n += 1
                 self.assertTrue(all(atom_in(a, out[2]) for a in q["required"]), q["id"])
                 self.assertFalse(any(atom_in(a, out[2]) for a in q["forbidden"]), q["id"])
-        self.assertEqual(n, 4)
+        self.assertEqual(n, 7)  # 4 multi-hop and 3 aggregation questions for broker a
 
     def test_structured_context_carries_result_and_evidence(self):
         q = "Which of my clients are currently interested in a building near Harbor Central station?"

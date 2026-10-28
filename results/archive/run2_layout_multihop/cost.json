@@ -1,0 +1,124 @@
+{
+ "per_broker": {
+  "a": {
+   "episodes": 44,
+   "hybrid_reindex_s": 0.011341042001731694,
+   "incremental": {
+    "completion_tokens": 118,
+    "llm_calls": 11,
+    "llm_s": 26.73998662797385,
+    "merge_calls": 0,
+    "prompt_tokens": 7121,
+    "python_s": 0.00011524901492521167
+   },
+   "new_episodes": 11,
+   "rebuild": {
+    "completion_tokens": 1960,
+    "llm_calls": 50,
+    "llm_s": 427.64053233290906,
+    "prompt_tokens": 32762,
+    "python_s": 0.0005837530479766428
+   },
+   "rebuild_cached_extraction": {
+    "llm_calls": 6,
+    "llm_s": 145.30407983096666,
+    "python_s": 0.0005837530479766428,
+    "tokens": 4419
+   },
+   "rebuild_every_episode_cached_extraction": {
+    "llm_calls": 66,
+    "llm_s": 1598.3448781406332
+   }
+  },
+  "b": {
+   "episodes": 42,
+   "hybrid_reindex_s": 0.0034735830267891288,
+   "incremental": {
+    "completion_tokens": 110,
+    "llm_calls": 11,
+    "llm_s": 16.39609916898189,
+    "merge_calls": 1,
+    "prompt_tokens": 6497,
+    "python_s": 0.0001299599534831941
+   },
+   "new_episodes": 10,
+   "rebuild": {
+    "completion_tokens": 1775,
+    "llm_calls": 47,
+    "llm_s": 314.6126277949952,
+    "prompt_tokens": 31154,
+    "python_s": 0.0004689539782702923
+   },
+   "rebuild_cached_extraction": {
+    "llm_calls": 5,
+    "llm_s": 119.03433395901811,
+    "python_s": 0.0004689539782702923,
+    "tokens": 4084
+   },
+   "rebuild_every_episode_cached_extraction": {
+    "llm_calls": 50,
+    "llm_s": 1190.3433395901811
+   }
+  },
+  "c": {
+   "episodes": 44,
+   "hybrid_reindex_s": 0.003327915968839079,
+   "incremental": {
+    "completion_tokens": 98,
+    "llm_calls": 12,
+    "llm_s": 28.254578999010846,
+    "merge_calls": 1,
+    "prompt_tokens": 7369,
+    "python_s": 0.0001167930313386023
+   },
+   "new_episodes": 11,
+   "rebuild": {
+    "completion_tokens": 1822,
+    "llm_calls": 49,
+    "llm_s": 364.1149350400083,
+    "prompt_tokens": 32353,
+    "python_s": 0.0005058801034465432
+   },
+   "rebuild_cached_extraction": {
+    "llm_calls": 5,
+    "llm_s": 124.39859774999786,
+    "python_s": 0.0005058801034465432,
+    "tokens": 4055
+   },
+   "rebuild_every_episode_cached_extraction": {
+    "llm_calls": 55,
+    "llm_s": 1368.3845752499765
+   }
+  }
+ },
+ "summary": {
+  "extraction_per_episode": {
+   "mean_completion_tokens": 29.338461538461537,
+   "mean_prompt_tokens": 657.3384615384615,
+   "mean_s": 5.52023910483023,
+   "median_s": 4.194240584009094
+  },
+  "hybrid_reindex_s": 0.0181425409973599,
+  "incremental": {
+   "llm_calls": 34,
+   "llm_s": 71.39066479596659,
+   "merge_calls": 2,
+   "python_s": 0.0003620019997470081,
+   "tokens": 21313
+  },
+  "new_episodes": 32,
+  "rebuild": {
+   "llm_calls": 146,
+   "llm_s": 1106.3680951679125,
+   "python_s": 0.0015585871296934783,
+   "tokens": 101826
+  },
+  "rebuild_cached_extraction": {
+   "llm_calls": 16,
+   "llm_s": 388.73701153998263,
+   "python_s": 0.0015585871296934783,
+   "tokens": 12558
+  },
+  "total_episodes": 130
+ }
+}

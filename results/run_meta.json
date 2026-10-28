@@ -1,6 +1,6 @@
 {
- "answer_s": 315.2196041670395,
- "build_s": 0.05732504196930677,
+ "answer_s": 20.63463183300337,
+ "build_s": 0.041499540966469795,
  "calls_by_tag": {
   "ablation:extract": 130,
   "answer:batch_graph": 81,
@@ -51,14 +51,14 @@
   }
  },
  "llm_calls": 662,
- "llm_calls_uncached": 81,
- "llm_s_all_measured": 3804.198735379643,
- "llm_s_uncached": 314.2350424968754,
+ "llm_calls_uncached": 9,
+ "llm_s_all_measured": 3795.301636086515,
+ "llm_s_uncached": 20.332621456880588,
  "machine": "arm64",
  "ollama_ps_after": [
   {
    "context_length": 24576,
-   "expires_at": "2319-02-07T14:15:37.555303807-03:00",
+   "expires_at": "2319-02-07T16:51:15.873521807-03:00",
    "name": "qwen2.5-coder:7b",
    "size_vram": 5950773656
   }
@@ -66,13 +66,13 @@
  "ollama_ps_before": [
   {
    "context_length": 24576,
-   "expires_at": "2319-02-07T14:09:53.164159807-03:00",
+   "expires_at": "2319-02-07T16:49:53.127641807-03:00",
    "name": "qwen2.5-coder:7b",
    "size_vram": 5950773656
   }
  ],
  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
  "python": "3.14.8",
- "started": "2026-10-28T14:23:05-0300",
- "wall_s": 315.5035222499864
+ "started": "2026-10-28T17:03:38-0300",
+ "wall_s": 20.833318583026994
 }

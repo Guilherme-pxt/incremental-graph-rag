@@ -2,14 +2,14 @@
  "per_broker": {
   "a": {
    "episodes": 44,
-   "hybrid_reindex_s": 0.011341042001731694,
+   "hybrid_reindex_s": 0.003688958997372538,
    "incremental": {
     "completion_tokens": 118,
     "llm_calls": 11,
     "llm_s": 26.73998662797385,
     "merge_calls": 0,
     "prompt_tokens": 7121,
-    "python_s": 0.00011524901492521167
+    "python_s": 0.0002076680539175868
    },
    "new_episodes": 11,
    "rebuild": {
@@ -17,12 +17,12 @@
     "llm_calls": 50,
     "llm_s": 427.64053233290906,
     "prompt_tokens": 32762,
-    "python_s": 0.0005837530479766428
+    "python_s": 0.0004911238793283701
    },
    "rebuild_cached_extraction": {
     "llm_calls": 6,
     "llm_s": 145.30407983096666,
-    "python_s": 0.0005837530479766428,
+    "python_s": 0.0004911238793283701,
     "tokens": 4419
    },
    "rebuild_every_episode_cached_extraction": {
@@ -32,14 +32,14 @@
   },
   "b": {
    "episodes": 42,
-   "hybrid_reindex_s": 0.0034735830267891288,
+   "hybrid_reindex_s": 0.0029487080173566937,
    "incremental": {
     "completion_tokens": 110,
     "llm_calls": 11,
     "llm_s": 16.39609916898189,
     "merge_calls": 1,
     "prompt_tokens": 6497,
-    "python_s": 0.0001299599534831941
+    "python_s": 0.0001411670818924904
    },
    "new_episodes": 10,
    "rebuild": {
@@ -47,12 +47,12 @@
     "llm_calls": 47,
     "llm_s": 314.6126277949952,
     "prompt_tokens": 31154,
-    "python_s": 0.0004689539782702923
+    "python_s": 0.00045862694969400764
    },
    "rebuild_cached_extraction": {
     "llm_calls": 5,
     "llm_s": 119.03433395901811,
-    "python_s": 0.0004689539782702923,
+    "python_s": 0.00045862694969400764,
     "tokens": 4084
    },
    "rebuild_every_episode_cached_extraction": {
@@ -62,14 +62,14 @@
   },
   "c": {
    "episodes": 44,
-   "hybrid_reindex_s": 0.003327915968839079,
+   "hybrid_reindex_s": 0.0031621669768355787,
    "incremental": {
     "completion_tokens": 98,
     "llm_calls": 12,
     "llm_s": 28.254578999010846,
     "merge_calls": 1,
     "prompt_tokens": 7369,
-    "python_s": 0.0001167930313386023
+    "python_s": 0.00010933395242318511
    },
    "new_episodes": 11,
    "rebuild": {
@@ -77,12 +77,12 @@
     "llm_calls": 49,
     "llm_s": 364.1149350400083,
     "prompt_tokens": 32353,
-    "python_s": 0.0005058801034465432
+    "python_s": 0.0004814169369637966
    },
    "rebuild_cached_extraction": {
     "llm_calls": 5,
     "llm_s": 124.39859774999786,
-    "python_s": 0.0005058801034465432,
+    "python_s": 0.0004814169369637966,
     "tokens": 4055
    },
    "rebuild_every_episode_cached_extraction": {
@@ -98,25 +98,25 @@
    "mean_s": 5.52023910483023,
    "median_s": 4.194240584009094
   },
-  "hybrid_reindex_s": 0.0181425409973599,
+  "hybrid_reindex_s": 0.00979983399156481,
   "incremental": {
    "llm_calls": 34,
    "llm_s": 71.39066479596659,
    "merge_calls": 2,
-   "python_s": 0.0003620019997470081,
+   "python_s": 0.0004581690882332623,
    "tokens": 21313
   },
   "new_episodes": 32,
   "rebuild": {
    "llm_calls": 146,
    "llm_s": 1106.3680951679125,
-   "python_s": 0.0015585871296934783,
+   "python_s": 0.0014311677659861743,
    "tokens": 101826
   },
   "rebuild_cached_extraction": {
    "llm_calls": 16,
    "llm_s": 388.73701153998263,
-   "python_s": 0.0015585871296934783,
+   "python_s": 0.0014311677659861743,
    "tokens": 12558
   },
   "total_episodes": 130
