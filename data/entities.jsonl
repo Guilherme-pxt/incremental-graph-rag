@@ -1,0 +1,46 @@
+{"aliases": [], "broker": null, "id": "bld:aurora-park", "name": "Aurora Park", "type": "building"}
+{"aliases": ["Aurora Res."], "broker": null, "id": "bld:aurora-residences", "name": "Aurora Residences", "type": "building"}
+{"aliases": ["Harbor Point Tower"], "broker": null, "id": "bld:harbor-point", "name": "Harbor Point", "type": "building"}
+{"aliases": ["the Linden"], "broker": null, "id": "bld:linden-court", "name": "Linden Court", "type": "building"}
+{"aliases": ["Mill House tower"], "broker": null, "id": "bld:mill-house", "name": "Mill House", "type": "building"}
+{"aliases": ["N1"], "broker": null, "id": "bld:northbank-one", "name": "Northbank One", "type": "building"}
+{"aliases": ["the Lofts"], "broker": null, "id": "bld:quarry-lofts", "name": "Quarry Lofts", "type": "building"}
+{"aliases": ["the Gardens"], "broker": null, "id": "bld:saltmarsh-gardens", "name": "Saltmarsh Gardens", "type": "building"}
+{"aliases": [], "broker": "a", "id": "brk:a", "name": "Lena Ferraz", "type": "broker"}
+{"aliases": [], "broker": "b", "id": "brk:b", "name": "Tomas Ekwueme", "type": "broker"}
+{"aliases": [], "broker": "c", "id": "brk:c", "name": "Priya Valdivia", "type": "broker"}
+{"aliases": ["Fil Arantes"], "broker": "a", "contact": "Fil Arantes", "id": "cli:a:felipe-arantes", "name": "Felipe Arantes", "type": "client"}
+{"aliases": ["Ingrid S."], "broker": "a", "contact": "Ingrid Sato", "id": "cli:a:ingrid-sato", "name": "Ingrid Sato", "type": "client"}
+{"aliases": ["Jonah P", "Jonah P."], "broker": "a", "contact": "Jonah P", "id": "cli:a:jonah-pellegrini", "name": "Jonah Pellegrini", "type": "client"}
+{"aliases": ["Kate Moreau", "Katherine M."], "broker": "a", "contact": "Kate Moreau", "id": "cli:a:katherine-moreau", "name": "Katherine Moreau", "type": "client"}
+{"aliases": ["Marina O."], "broker": "a", "contact": "Marina Okafor", "id": "cli:a:marina-okafor", "name": "Marina Okafor", "type": "client"}
+{"aliases": ["Ruth C", "Ruth C."], "broker": "a", "contact": "Ruth C", "id": "cli:a:ruth-castellano", "name": "Ruth Castellano", "type": "client"}
+{"aliases": ["Will Thorne"], "broker": "a", "contact": "Will Thorne", "id": "cli:a:william-thorne", "name": "William Thorne", "type": "client"}
+{"aliases": ["Kenji A", "Kenji A."], "broker": "b", "contact": "Kenji A", "id": "cli:b:kenji-albright", "name": "Kenji Albright", "type": "client"}
+{"aliases": ["Leah H", "Leah H."], "broker": "b", "contact": "Leah H", "id": "cli:b:leah-hartmann", "name": "Leah Hartmann", "type": "client"}
+{"aliases": ["Marina L", "Marina L."], "broker": "b", "contact": "Marina L", "id": "cli:b:marina-lindqvist", "name": "Marina Lindqvist", "type": "client"}
+{"aliases": ["Nadia F."], "broker": "b", "contact": "Nadia Ferreira", "id": "cli:b:nadia-ferreira", "name": "Nadia Ferreira", "type": "client"}
+{"aliases": ["Oskar B."], "broker": "b", "contact": "Oskar Brandt", "id": "cli:b:oskar-brandt", "name": "Oskar Brandt", "type": "client"}
+{"aliases": ["Sam Okonjo"], "broker": "b", "contact": "Sam Okonjo", "id": "cli:b:samuel-okonjo", "name": "Samuel Okonjo", "type": "client"}
+{"aliases": ["Teresa V."], "broker": "b", "contact": "Teresa Vilar", "id": "cli:b:teresa-vilar", "name": "Teresa Vilar", "type": "client"}
+{"aliases": ["Amir H", "Amir H."], "broker": "c", "contact": "Amir H", "id": "cli:c:amir-haddad", "name": "Amir Haddad", "type": "client"}
+{"aliases": ["Bia Lund"], "broker": "c", "contact": "Bia Lund", "id": "cli:c:beatriz-lund", "name": "Beatriz Lund", "type": "client"}
+{"aliases": ["Clara N."], "broker": "c", "contact": "Clara Novak", "id": "cli:c:clara-novak", "name": "Clara Novak", "type": "client"}
+{"aliases": ["Dani Reyes", "Daniel R."], "broker": "c", "contact": "Dani Reyes", "id": "cli:c:daniel-reyes", "name": "Daniel Reyes", "type": "client"}
+{"aliases": ["Daniel W", "Daniel W."], "broker": "c", "contact": "Daniel W", "id": "cli:c:daniel-weber", "name": "Daniel Weber", "type": "client"}
+{"aliases": ["Liz Grant"], "broker": "c", "contact": "Liz Grant", "id": "cli:c:elisabeth-grant", "name": "Elisabeth Grant", "type": "client"}
+{"aliases": ["Hugo T."], "broker": "c", "contact": "Hugo Tamsin", "id": "cli:c:hugo-tamsin", "name": "Hugo Tamsin", "type": "client"}
+{"aliases": [], "broker": null, "id": "dev:brightwater-homes", "name": "Brightwater Homes", "type": "developer"}
+{"aliases": [], "broker": null, "id": "dev:corvane-developments", "name": "Corvane Developments", "type": "developer"}
+{"aliases": [], "broker": null, "id": "dev:halden-group", "name": "Halden Group", "type": "developer"}
+{"aliases": [], "broker": null, "id": "dev:tessaro-building-co", "name": "Tessaro Building Co", "type": "developer"}
+{"aliases": [], "broker": null, "id": "nbh:harbor-row", "name": "Harbor Row", "type": "neighborhood"}
+{"aliases": [], "broker": null, "id": "nbh:linden-hill", "name": "Linden Hill", "type": "neighborhood"}
+{"aliases": [], "broker": null, "id": "nbh:northbank", "name": "Northbank", "type": "neighborhood"}
+{"aliases": [], "broker": null, "id": "nbh:old-quarry", "name": "Old Quarry", "type": "neighborhood"}
+{"aliases": [], "broker": null, "id": "nbh:saltmarsh", "name": "Saltmarsh", "type": "neighborhood"}
+{"aliases": ["Fenwick Square station"], "broker": null, "id": "stn:fenwick-square", "name": "Fenwick Square", "type": "station"}
+{"aliases": ["Harbor Central station"], "broker": null, "id": "stn:harbor-central", "name": "Harbor Central", "type": "station"}
+{"aliases": ["Mill Street station"], "broker": null, "id": "stn:mill-street", "name": "Mill Street", "type": "station"}
+{"aliases": ["Quarry Gate station"], "broker": null, "id": "stn:quarry-gate", "name": "Quarry Gate", "type": "station"}
+{"aliases": ["Riverside station"], "broker": null, "id": "stn:riverside", "name": "Riverside", "type": "station"}

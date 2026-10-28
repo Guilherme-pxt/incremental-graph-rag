@@ -1,0 +1,2524 @@
+{
+ "broker": "b",
+ "edges": [
+  {
+   "dates": [
+    "2026-01-05"
+   ],
+   "dst": "b:n002",
+   "episodes": [
+    "b-001"
+   ],
+   "id": 0,
+   "invalidated_by": null,
+   "pred": "developer",
+   "src": "b:n001",
+   "valid_from": "2026-01-05",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-05"
+   ],
+   "dst": "b:n003",
+   "episodes": [
+    "b-001"
+   ],
+   "id": 1,
+   "invalidated_by": null,
+   "pred": "located_in",
+   "src": "b:n001",
+   "valid_from": "2026-01-05",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-05"
+   ],
+   "dst": "b:n004",
+   "episodes": [
+    "b-001"
+   ],
+   "id": 2,
+   "invalidated_by": null,
+   "pred": "near_station",
+   "src": "b:n001",
+   "valid_from": "2026-01-05",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-05"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-001"
+   ],
+   "id": 3,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n001",
+   "valid_from": "2026-01-05",
+   "valid_to": null,
+   "value": 2
+  },
+  {
+   "dates": [
+    "2026-01-05"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-001"
+   ],
+   "id": 4,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n001",
+   "valid_from": "2026-01-05",
+   "valid_to": null,
+   "value": 3
+  },
+  {
+   "dates": [
+    "2026-01-05"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-001"
+   ],
+   "id": 5,
+   "invalidated_by": null,
+   "pred": "price",
+   "src": "b:n001",
+   "valid_from": "2026-01-05",
+   "valid_to": null,
+   "value": 640000
+  },
+  {
+   "dates": [
+    "2026-01-05"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-001"
+   ],
+   "id": 6,
+   "invalidated_by": null,
+   "pred": "delivery",
+   "src": "b:n001",
+   "valid_from": "2026-01-05",
+   "valid_to": null,
+   "value": "2027-06"
+  },
+  {
+   "dates": [
+    "2026-01-07"
+   ],
+   "dst": "b:n006",
+   "episodes": [
+    "b-002"
+   ],
+   "id": 7,
+   "invalidated_by": null,
+   "pred": "developer",
+   "src": "b:n005",
+   "valid_from": "2026-01-07",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-07"
+   ],
+   "dst": "b:n007",
+   "episodes": [
+    "b-002"
+   ],
+   "id": 8,
+   "invalidated_by": null,
+   "pred": "located_in",
+   "src": "b:n005",
+   "valid_from": "2026-01-07",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-07"
+   ],
+   "dst": "b:n008",
+   "episodes": [
+    "b-002"
+   ],
+   "id": 9,
+   "invalidated_by": null,
+   "pred": "near_station",
+   "src": "b:n005",
+   "valid_from": "2026-01-07",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-07"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-002"
+   ],
+   "id": 10,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n005",
+   "valid_from": "2026-01-07",
+   "valid_to": null,
+   "value": 1
+  },
+  {
+   "dates": [
+    "2026-01-07"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-002"
+   ],
+   "id": 11,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n005",
+   "valid_from": "2026-01-07",
+   "valid_to": null,
+   "value": 2
+  },
+  {
+   "dates": [
+    "2026-01-07"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-002"
+   ],
+   "id": 12,
+   "invalidated_by": null,
+   "pred": "price",
+   "src": "b:n005",
+   "valid_from": "2026-01-07",
+   "valid_to": null,
+   "value": 412000
+  },
+  {
+   "dates": [
+    "2026-01-07"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-002"
+   ],
+   "id": 13,
+   "invalidated_by": null,
+   "pred": "delivery",
+   "src": "b:n005",
+   "valid_from": "2026-01-07",
+   "valid_to": null,
+   "value": "2026-11"
+  },
+  {
+   "dates": [
+    "2026-01-09"
+   ],
+   "dst": "b:n010",
+   "episodes": [
+    "b-003"
+   ],
+   "id": 14,
+   "invalidated_by": null,
+   "pred": "developer",
+   "src": "b:n009",
+   "valid_from": "2026-01-09",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-09"
+   ],
+   "dst": "b:n011",
+   "episodes": [
+    "b-003"
+   ],
+   "id": 15,
+   "invalidated_by": null,
+   "pred": "located_in",
+   "src": "b:n009",
+   "valid_from": "2026-01-09",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-09"
+   ],
+   "dst": "b:n012",
+   "episodes": [
+    "b-003"
+   ],
+   "id": 16,
+   "invalidated_by": null,
+   "pred": "near_station",
+   "src": "b:n009",
+   "valid_from": "2026-01-09",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-09"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-003"
+   ],
+   "id": 17,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n009",
+   "valid_from": "2026-01-09",
+   "valid_to": null,
+   "value": 1
+  },
+  {
+   "dates": [
+    "2026-01-09"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-003"
+   ],
+   "id": 18,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n009",
+   "valid_from": "2026-01-09",
+   "valid_to": null,
+   "value": 2
+  },
+  {
+   "dates": [
+    "2026-01-09"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-003"
+   ],
+   "id": 19,
+   "invalidated_by": null,
+   "pred": "price",
+   "src": "b:n009",
+   "valid_from": "2026-01-09",
+   "valid_to": null,
+   "value": 357000
+  },
+  {
+   "dates": [
+    "2026-01-09"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-003"
+   ],
+   "id": 20,
+   "invalidated_by": null,
+   "pred": "delivery",
+   "src": "b:n009",
+   "valid_from": "2026-01-09",
+   "valid_to": null,
+   "value": "2026-09"
+  },
+  {
+   "dates": [
+    "2026-01-11"
+   ],
+   "dst": "b:n002",
+   "episodes": [
+    "b-004"
+   ],
+   "id": 21,
+   "invalidated_by": null,
+   "pred": "developer",
+   "src": "b:n013",
+   "valid_from": "2026-01-11",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-11"
+   ],
+   "dst": "b:n014",
+   "episodes": [
+    "b-004"
+   ],
+   "id": 22,
+   "invalidated_by": null,
+   "pred": "located_in",
+   "src": "b:n013",
+   "valid_from": "2026-01-11",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-11"
+   ],
+   "dst": "b:n008",
+   "episodes": [
+    "b-004"
+   ],
+   "id": 23,
+   "invalidated_by": null,
+   "pred": "near_station",
+   "src": "b:n013",
+   "valid_from": "2026-01-11",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-11"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-004"
+   ],
+   "id": 24,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n013",
+   "valid_from": "2026-01-11",
+   "valid_to": null,
+   "value": 2
+  },
+  {
+   "dates": [
+    "2026-01-11"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-004"
+   ],
+   "id": 25,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n013",
+   "valid_from": "2026-01-11",
+   "valid_to": null,
+   "value": 3
+  },
+  {
+   "dates": [
+    "2026-01-11"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-004"
+   ],
+   "id": 26,
+   "invalidated_by": null,
+   "pred": "price",
+   "src": "b:n013",
+   "valid_from": "2026-01-11",
+   "valid_to": null,
+   "value": 724000
+  },
+  {
+   "dates": [
+    "2026-01-11"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-004"
+   ],
+   "id": 27,
+   "invalidated_by": null,
+   "pred": "delivery",
+   "src": "b:n013",
+   "valid_from": "2026-01-11",
+   "valid_to": null,
+   "value": "2027-02"
+  },
+  {
+   "dates": [
+    "2026-01-12"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-005"
+   ],
+   "id": 28,
+   "invalidated_by": null,
+   "pred": "budget",
+   "src": "b:n015",
+   "valid_from": "2026-01-12",
+   "valid_to": null,
+   "value": 678000
+  },
+  {
+   "dates": [
+    "2026-01-12"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-005"
+   ],
+   "id": 29,
+   "invalidated_by": null,
+   "pred": "bedrooms",
+   "src": "b:n015",
+   "valid_from": "2026-01-12",
+   "valid_to": null,
+   "value": 2
+  },
+  {
+   "dates": [
+    "2026-01-12"
+   ],
+   "dst": "b:n007",
+   "episodes": [
+    "b-005"
+   ],
+   "id": 30,
+   "invalidated_by": null,
+   "pred": "wants_neighborhood",
+   "src": "b:n015",
+   "valid_from": "2026-01-12",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-13"
+   ],
+   "dst": "b:n006",
+   "episodes": [
+    "b-006"
+   ],
+   "id": 31,
+   "invalidated_by": null,
+   "pred": "developer",
+   "src": "b:n016",
+   "valid_from": "2026-01-13",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-13"
+   ],
+   "dst": "b:n007",
+   "episodes": [
+    "b-006"
+   ],
+   "id": 32,
+   "invalidated_by": null,
+   "pred": "located_in",
+   "src": "b:n016",
+   "valid_from": "2026-01-13",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-13"
+   ],
+   "dst": "b:n004",
+   "episodes": [
+    "b-006"
+   ],
+   "id": 33,
+   "invalidated_by": null,
+   "pred": "near_station",
+   "src": "b:n016",
+   "valid_from": "2026-01-13",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-13"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-006"
+   ],
+   "id": 34,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n016",
+   "valid_from": "2026-01-13",
+   "valid_to": null,
+   "value": 3
+  },
+  {
+   "dates": [
+    "2026-01-13"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-006"
+   ],
+   "id": 35,
+   "invalidated_by": null,
+   "pred": "price",
+   "src": "b:n016",
+   "valid_from": "2026-01-13",
+   "valid_to": null,
+   "value": 593000
+  },
+  {
+   "dates": [
+    "2026-01-13"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-006"
+   ],
+   "id": 36,
+   "invalidated_by": null,
+   "pred": "delivery",
+   "src": "b:n016",
+   "valid_from": "2026-01-13",
+   "valid_to": null,
+   "value": "2027-10"
+  },
+  {
+   "dates": [
+    "2026-01-13"
+   ],
+   "dst": "b:n018",
+   "episodes": [
+    "b-007"
+   ],
+   "id": 37,
+   "invalidated_by": null,
+   "pred": "visited",
+   "src": "b:n017",
+   "valid_from": "2026-01-13",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-13"
+   ],
+   "dst": "b:n018",
+   "episodes": [
+    "b-007"
+   ],
+   "id": 38,
+   "invalidated_by": null,
+   "pred": "interested_in",
+   "src": "b:n017",
+   "valid_from": "2026-01-13",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-13"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-007"
+   ],
+   "id": 39,
+   "invalidated_by": null,
+   "pred": "deadline",
+   "src": "b:n017",
+   "valid_from": "2026-01-13",
+   "valid_to": null,
+   "value": "2028-04"
+  },
+  {
+   "dates": [
+    "2026-01-15"
+   ],
+   "dst": "b:n019",
+   "episodes": [
+    "b-008"
+   ],
+   "id": 40,
+   "invalidated_by": null,
+   "pred": "developer",
+   "src": "b:n018",
+   "valid_from": "2026-01-15",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-15"
+   ],
+   "dst": "b:n011",
+   "episodes": [
+    "b-008"
+   ],
+   "id": 41,
+   "invalidated_by": null,
+   "pred": "located_in",
+   "src": "b:n018",
+   "valid_from": "2026-01-15",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-15"
+   ],
+   "dst": "b:n020",
+   "episodes": [
+    "b-008"
+   ],
+   "id": 42,
+   "invalidated_by": null,
+   "pred": "near_station",
+   "src": "b:n018",
+   "valid_from": "2026-01-15",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-15"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-008"
+   ],
+   "id": 43,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n018",
+   "valid_from": "2026-01-15",
+   "valid_to": null,
+   "value": 2
+  },
+  {
+   "dates": [
+    "2026-01-15"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-008"
+   ],
+   "id": 44,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n018",
+   "valid_from": "2026-01-15",
+   "valid_to": null,
+   "value": 3
+  },
+  {
+   "dates": [
+    "2026-01-15"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-008"
+   ],
+   "id": 45,
+   "invalidated_by": null,
+   "pred": "unit_bedrooms",
+   "src": "b:n018",
+   "valid_from": "2026-01-15",
+   "valid_to": null,
+   "value": 4
+  },
+  {
+   "dates": [
+    "2026-01-15"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-008"
+   ],
+   "id": 46,
+   "invalidated_by": null,
+   "pred": "price",
+   "src": "b:n018",
+   "valid_from": "2026-01-15",
+   "valid_to": null,
+   "value": 836000
+  },
+  {
+   "dates": [
+    "2026-01-15"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-008"
+   ],
+   "id": 47,
+   "invalidated_by": null,
+   "pred": "delivery",
+   "src": "b:n018",
+   "valid_from": "2026-01-15",
+   "valid_to": null,
+   "value": "2027-08"
+  },
+  {
+   "dates": [
+    "2026-01-23"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-009"
+   ],
+   "id": 48,
+   "invalidated_by": null,
+   "pred": "bedrooms",
+   "src": "b:n021",
+   "valid_from": "2026-01-23",
+   "valid_to": null,
+   "value": 2
+  },
+  {
+   "dates": [
+    "2026-01-23"
+   ],
+   "dst": "b:n011",
+   "episodes": [
+    "b-009"
+   ],
+   "id": 49,
+   "invalidated_by": null,
+   "pred": "wants_neighborhood",
+   "src": "b:n021",
+   "valid_from": "2026-01-23",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-23"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-009"
+   ],
+   "id": 50,
+   "invalidated_by": null,
+   "pred": "budget",
+   "src": "b:n021",
+   "valid_from": "2026-01-23",
+   "valid_to": null,
+   "value": 349000
+  },
+  {
+   "dates": [
+    "2026-01-24"
+   ],
+   "dst": "b:n001",
+   "episodes": [
+    "b-010"
+   ],
+   "id": 51,
+   "invalidated_by": null,
+   "pred": "interested_in",
+   "src": "b:n021",
+   "valid_from": "2026-01-24",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-01-24"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-010"
+   ],
+   "id": 52,
+   "invalidated_by": null,
+   "pred": "deadline",
+   "src": "b:n021",
+   "valid_from": "2026-01-24",
+   "valid_to": null,
+   "value": "2026-12"
+  },
+  {
+   "dates": [
+    "2026-01-27"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-011"
+   ],
+   "id": 53,
+   "invalidated_by": null,
+   "pred": "budget",
+   "src": "b:n017",
+   "valid_from": "2026-01-27",
+   "valid_to": null,
+   "value": 740000
+  },
+  {
+   "dates": [
+    "2026-02-02"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-012"
+   ],
+   "id": 54,
+   "invalidated_by": null,
+   "pred": "budget",
+   "src": "b:n022",
+   "valid_from": "2026-02-02",
+   "valid_to": null,
+   "value": 953000
+  },
+  {
+   "dates": [
+    "2026-02-02"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-012"
+   ],
+   "id": 55,
+   "invalidated_by": null,
+   "pred": "bedrooms",
+   "src": "b:n022",
+   "valid_from": "2026-02-02",
+   "valid_to": null,
+   "value": 3
+  },
+  {
+   "dates": [
+    "2026-02-02"
+   ],
+   "dst": "b:n003",
+   "episodes": [
+    "b-012"
+   ],
+   "id": 56,
+   "invalidated_by": null,
+   "pred": "wants_neighborhood",
+   "src": "b:n022",
+   "valid_from": "2026-02-02",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-03"
+   ],
+   "dst": "b:n016",
+   "episodes": [
+    "b-013"
+   ],
+   "id": 57,
+   "invalidated_by": null,
+   "pred": "visited",
+   "src": "b:n023",
+   "valid_from": "2026-02-03",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-03"
+   ],
+   "dst": "b:n016",
+   "episodes": [
+    "b-013"
+   ],
+   "id": 58,
+   "invalidated_by": null,
+   "pred": "interested_in",
+   "src": "b:n023",
+   "valid_from": "2026-02-03",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-03"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-013"
+   ],
+   "id": 59,
+   "invalidated_by": null,
+   "pred": "deadline",
+   "src": "b:n023",
+   "valid_from": "2026-02-03",
+   "valid_to": null,
+   "value": "2028-05"
+  },
+  {
+   "dates": [
+    "2026-02-08"
+   ],
+   "dst": "b:n025",
+   "episodes": [
+    "b-015"
+   ],
+   "id": 60,
+   "invalidated_by": null,
+   "pred": "visited",
+   "src": "b:n024",
+   "valid_from": "2026-02-08",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-12"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-016"
+   ],
+   "id": 61,
+   "invalidated_by": null,
+   "pred": "budget",
+   "src": "b:n026",
+   "valid_from": "2026-02-12",
+   "valid_to": null,
+   "value": 1137000
+  },
+  {
+   "dates": [
+    "2026-02-12"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-016"
+   ],
+   "id": 62,
+   "invalidated_by": null,
+   "pred": "bedrooms",
+   "src": "b:n026",
+   "valid_from": "2026-02-12",
+   "valid_to": null,
+   "value": 3
+  },
+  {
+   "dates": [
+    "2026-02-12"
+   ],
+   "dst": "b:n011",
+   "episodes": [
+    "b-016"
+   ],
+   "id": 63,
+   "invalidated_by": null,
+   "pred": "wants_neighborhood",
+   "src": "b:n026",
+   "valid_from": "2026-02-12",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-13"
+   ],
+   "dst": "b:n001",
+   "episodes": [
+    "b-017"
+   ],
+   "id": 64,
+   "invalidated_by": null,
+   "pred": "interested_in",
+   "src": "b:n027",
+   "valid_from": "2026-02-13",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-13"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-017"
+   ],
+   "id": 65,
+   "invalidated_by": null,
+   "pred": "deadline",
+   "src": "b:n027",
+   "valid_from": "2026-02-13",
+   "valid_to": null,
+   "value": "2028-09"
+  },
+  {
+   "dates": [
+    "2026-02-17"
+   ],
+   "dst": "b:n018",
+   "episodes": [
+    "b-018"
+   ],
+   "id": 66,
+   "invalidated_by": null,
+   "pred": "visited",
+   "src": "b:n015",
+   "valid_from": "2026-02-17",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-21"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-019"
+   ],
+   "id": 67,
+   "invalidated_by": null,
+   "pred": "bedrooms",
+   "src": "b:n028",
+   "valid_from": "2026-02-21",
+   "valid_to": null,
+   "value": 3
+  },
+  {
+   "dates": [
+    "2026-02-21"
+   ],
+   "dst": "b:n011",
+   "episodes": [
+    "b-019"
+   ],
+   "id": 68,
+   "invalidated_by": null,
+   "pred": "wants_neighborhood",
+   "src": "b:n028",
+   "valid_from": "2026-02-21",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-21"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-019"
+   ],
+   "id": 69,
+   "invalidated_by": null,
+   "pred": "budget",
+   "src": "b:n028",
+   "valid_from": "2026-02-21",
+   "valid_to": null,
+   "value": 376000
+  },
+  {
+   "dates": [
+    "2026-02-24"
+   ],
+   "dst": "b:n016",
+   "episodes": [
+    "b-020"
+   ],
+   "id": 70,
+   "invalidated_by": null,
+   "pred": "visited",
+   "src": "b:n028",
+   "valid_from": "2026-02-24",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-24"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-020"
+   ],
+   "id": 71,
+   "invalidated_by": null,
+   "pred": "deadline",
+   "src": "b:n028",
+   "valid_from": "2026-02-24",
+   "valid_to": null,
+   "value": "2027-08"
+  },
+  {
+   "dates": [
+    "2026-02-27"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-021"
+   ],
+   "id": 72,
+   "invalidated_by": null,
+   "pred": "budget",
+   "src": "b:n029",
+   "valid_from": "2026-02-27",
+   "valid_to": null,
+   "value": 555000
+  },
+  {
+   "dates": [
+    "2026-02-27"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-021"
+   ],
+   "id": 73,
+   "invalidated_by": null,
+   "pred": "bedrooms",
+   "src": "b:n029",
+   "valid_from": "2026-02-27",
+   "valid_to": null,
+   "value": 3
+  },
+  {
+   "dates": [
+    "2026-02-27"
+   ],
+   "dst": "b:n007",
+   "episodes": [
+    "b-021"
+   ],
+   "id": 74,
+   "invalidated_by": null,
+   "pred": "located_in",
+   "src": "b:n029",
+   "valid_from": "2026-02-27",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-28",
+    "2026-04-24"
+   ],
+   "dst": "b:n025",
+   "episodes": [
+    "b-022",
+    "b-038"
+   ],
+   "id": 75,
+   "invalidated_by": null,
+   "pred": "visited",
+   "src": "b:n026",
+   "valid_from": "2026-02-28",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-28"
+   ],
+   "dst": "b:n016",
+   "episodes": [
+    "b-023"
+   ],
+   "id": 76,
+   "invalidated_by": null,
+   "pred": "interested_in",
+   "src": "b:n030",
+   "valid_from": "2026-02-28",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-02-28"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-023"
+   ],
+   "id": 77,
+   "invalidated_by": null,
+   "pred": "deadline",
+   "src": "b:n030",
+   "valid_from": "2026-02-28",
+   "valid_to": null,
+   "value": "2026-11"
+  },
+  {
+   "dates": [
+    "2026-03-10"
+   ],
+   "dst": "b:n005",
+   "episodes": [
+    "b-024"
+   ],
+   "id": 78,
+   "invalidated_by": null,
+   "pred": "interested_in",
+   "src": "b:n021",
+   "valid_from": "2026-03-10",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-03-10"
+   ],
+   "dst": "b:n001",
+   "episodes": [
+    "b-024"
+   ],
+   "id": 79,
+   "invalidated_by": null,
+   "pred": "visited",
+   "src": "b:n021",
+   "valid_from": "2026-03-10",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-03-10"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-024"
+   ],
+   "id": 80,
+   "invalidated_by": null,
+   "pred": "objection",
+   "src": "b:n021",
+   "valid_from": "2026-03-10",
+   "valid_to": null,
+   "value": "aurora residences"
+  },
+  {
+   "dates": [
+    "2026-03-10"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-025"
+   ],
+   "id": 81,
+   "invalidated_by": null,
+   "pred": "bedrooms",
+   "src": "b:n023",
+   "valid_from": "2026-03-10",
+   "valid_to": null,
+   "value": 4
+  },
+  {
+   "dates": [
+    "2026-03-10"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-026"
+   ],
+   "id": 82,
+   "invalidated_by": null,
+   "pred": "budget",
+   "src": "b:n031",
+   "valid_from": "2026-03-10",
+   "valid_to": null,
+   "value": 1090000
+  },
+  {
+   "dates": [
+    "2026-03-10"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-026"
+   ],
+   "id": 83,
+   "invalidated_by": null,
+   "pred": "bedrooms",
+   "src": "b:n031",
+   "valid_from": "2026-03-10",
+   "valid_to": null,
+   "value": 4
+  },
+  {
+   "dates": [
+    "2026-03-10"
+   ],
+   "dst": "b:n014",
+   "episodes": [
+    "b-026"
+   ],
+   "id": 84,
+   "invalidated_by": null,
+   "pred": "wants_neighborhood",
+   "src": "b:n031",
+   "valid_from": "2026-03-10",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-03-13"
+   ],
+   "dst": "b:n032",
+   "episodes": [
+    "b-027"
+   ],
+   "id": 85,
+   "invalidated_by": null,
+   "pred": "interested_in",
+   "src": "b:n031",
+   "valid_from": "2026-03-13",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-03-13"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-027"
+   ],
+   "id": 86,
+   "invalidated_by": null,
+   "pred": "deadline",
+   "src": "b:n031",
+   "valid_from": "2026-03-13",
+   "valid_to": null,
+   "value": "2027-08"
+  },
+  {
+   "dates": [
+    "2026-03-18"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-028"
+   ],
+   "id": 87,
+   "invalidated_by": null,
+   "pred": "budget",
+   "src": "b:n017",
+   "valid_from": "2026-03-18",
+   "valid_to": null,
+   "value": 808000
+  },
+  {
+   "dates": [
+    "2026-03-24"
+   ],
+   "dst": "b:n005",
+   "episodes": [
+    "b-029"
+   ],
+   "id": 88,
+   "invalidated_by": null,
+   "pred": "visited",
+   "src": "b:n021",
+   "valid_from": "2026-03-24",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-03-24"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-030"
+   ],
+   "id": 89,
+   "invalidated_by": null,
+   "pred": "deadline",
+   "src": "b:n028",
+   "valid_from": "2026-03-24",
+   "valid_to": null,
+   "value": "2028-02"
+  },
+  {
+   "dates": [
+    "2026-03-31"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-031"
+   ],
+   "id": 90,
+   "invalidated_by": null,
+   "pred": "budget",
+   "src": "b:n030",
+   "valid_from": "2026-03-31",
+   "valid_to": null,
+   "value": 456000
+  },
+  {
+   "dates": [
+    "2026-04-02"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-032"
+   ],
+   "id": 91,
+   "invalidated_by": null,
+   "pred": "budget",
+   "src": "b:n022",
+   "valid_from": "2026-04-02",
+   "valid_to": null,
+   "value": 1044000
+  },
+  {
+   "dates": [
+    "2026-04-03"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-034"
+   ],
+   "id": 92,
+   "invalidated_by": null,
+   "pred": "objection",
+   "src": "b:n027",
+   "valid_from": "2026-04-03",
+   "valid_to": null,
+   "value": "view is blocked"
+  },
+  {
+   "dates": [
+    "2026-04-15"
+   ],
+   "dst": "b:n009",
+   "episodes": [
+    "b-035"
+   ],
+   "id": 93,
+   "invalidated_by": null,
+   "pred": "visited",
+   "src": "b:n028",
+   "valid_from": "2026-04-15",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-04-15"
+   ],
+   "dst": "b:n018",
+   "episodes": [
+    "b-036"
+   ],
+   "id": 94,
+   "invalidated_by": null,
+   "pred": "visited",
+   "src": "b:n031",
+   "valid_from": "2026-04-15",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-04-18"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-037"
+   ],
+   "id": 95,
+   "invalidated_by": null,
+   "pred": "price",
+   "src": "b:n005",
+   "valid_from": "2026-04-18",
+   "valid_to": null,
+   "value": 379000
+  },
+  {
+   "dates": [
+    "2026-04-27"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-039"
+   ],
+   "id": 96,
+   "invalidated_by": null,
+   "pred": "price",
+   "src": "b:n033",
+   "valid_from": "2026-04-27",
+   "valid_to": null,
+   "value": 326000
+  },
+  {
+   "dates": [
+    "2026-04-29"
+   ],
+   "dst": "b:n009",
+   "episodes": [
+    "b-040"
+   ],
+   "id": 97,
+   "invalidated_by": null,
+   "pred": "visited",
+   "src": "b:n023",
+   "valid_from": "2026-04-29",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-05-02"
+   ],
+   "dst": "b:n018",
+   "episodes": [
+    "b-041"
+   ],
+   "id": 98,
+   "invalidated_by": null,
+   "pred": "interested_in",
+   "src": "b:n030",
+   "valid_from": "2026-05-02",
+   "valid_to": null,
+   "value": null
+  },
+  {
+   "dates": [
+    "2026-05-05"
+   ],
+   "dst": null,
+   "episodes": [
+    "b-042"
+   ],
+   "id": 99,
+   "invalidated_by": null,
+   "pred": "delivery",
+   "src": "b:n016",
+   "valid_from": "2026-05-05",
+   "valid_to": null,
+   "value": "2028-01"
+  }
+ ],
+ "nodes": [
+  {
+   "aliases": [],
+   "created_in": "b-001",
+   "id": "b:n001",
+   "mentions": [
+    [
+     "b-001",
+     "Aurora Residences"
+    ],
+    [
+     "b-001",
+     "Aurora Residences"
+    ],
+    [
+     "b-001",
+     "Aurora Residences"
+    ],
+    [
+     "b-001",
+     "Aurora Residences"
+    ],
+    [
+     "b-001",
+     "Aurora Residences"
+    ],
+    [
+     "b-001",
+     "Aurora Residences"
+    ],
+    [
+     "b-001",
+     "Aurora Residences"
+    ],
+    [
+     "b-010",
+     "Aurora Residences"
+    ],
+    [
+     "b-017",
+     "Aurora Residences"
+    ],
+    [
+     "b-024",
+     "Aurora Residences"
+    ]
+   ],
+   "name": "Aurora Residences",
+   "thread": null,
+   "type": "building"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-001",
+   "id": "b:n002",
+   "mentions": [
+    [
+     "b-001",
+     "Halden Group"
+    ],
+    [
+     "b-004",
+     "Halden Group"
+    ]
+   ],
+   "name": "Halden Group",
+   "thread": null,
+   "type": "developer"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-001",
+   "id": "b:n003",
+   "mentions": [
+    [
+     "b-001",
+     "Northbank"
+    ],
+    [
+     "b-012",
+     "Northbank"
+    ]
+   ],
+   "name": "Northbank",
+   "thread": null,
+   "type": "neighborhood"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-001",
+   "id": "b:n004",
+   "mentions": [
+    [
+     "b-001",
+     "Riverside station"
+    ],
+    [
+     "b-006",
+     "Riverside station"
+    ]
+   ],
+   "name": "Riverside station",
+   "thread": null,
+   "type": "station"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-002",
+   "id": "b:n005",
+   "mentions": [
+    [
+     "b-002",
+     "Aurora Park"
+    ],
+    [
+     "b-002",
+     "Aurora Park"
+    ],
+    [
+     "b-002",
+     "Aurora Park"
+    ],
+    [
+     "b-002",
+     "Aurora Park"
+    ],
+    [
+     "b-002",
+     "Aurora Park"
+    ],
+    [
+     "b-002",
+     "Aurora Park"
+    ],
+    [
+     "b-002",
+     "Aurora Park"
+    ],
+    [
+     "b-024",
+     "Aurora Park"
+    ],
+    [
+     "b-029",
+     "Aurora Park"
+    ],
+    [
+     "b-037",
+     "Aurora Park"
+    ]
+   ],
+   "name": "Aurora Park",
+   "thread": null,
+   "type": "building"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-002",
+   "id": "b:n006",
+   "mentions": [
+    [
+     "b-002",
+     "Brightwater Homes"
+    ],
+    [
+     "b-006",
+     "Brightwater Homes"
+    ]
+   ],
+   "name": "Brightwater Homes",
+   "thread": null,
+   "type": "developer"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-002",
+   "id": "b:n007",
+   "mentions": [
+    [
+     "b-002",
+     "Saltmarsh"
+    ],
+    [
+     "b-005",
+     "Saltmarsh"
+    ],
+    [
+     "b-006",
+     "Saltmarsh"
+    ],
+    [
+     "b-021",
+     "Saltmarsh"
+    ]
+   ],
+   "name": "Saltmarsh",
+   "thread": null,
+   "type": "neighborhood"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-002",
+   "id": "b:n008",
+   "mentions": [
+    [
+     "b-002",
+     "Harbor Central"
+    ],
+    [
+     "b-004",
+     "Harbor Central"
+    ]
+   ],
+   "name": "Harbor Central",
+   "thread": null,
+   "type": "station"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-003",
+   "id": "b:n009",
+   "mentions": [
+    [
+     "b-003",
+     "Quarry Lofts"
+    ],
+    [
+     "b-003",
+     "Quarry Lofts"
+    ],
+    [
+     "b-003",
+     "Quarry Lofts"
+    ],
+    [
+     "b-003",
+     "Quarry Lofts"
+    ],
+    [
+     "b-003",
+     "Quarry Lofts"
+    ],
+    [
+     "b-003",
+     "Quarry Lofts"
+    ],
+    [
+     "b-003",
+     "Quarry Lofts"
+    ],
+    [
+     "b-035",
+     "Quarry Lofts"
+    ],
+    [
+     "b-040",
+     "Quarry Lofts"
+    ]
+   ],
+   "name": "Quarry Lofts",
+   "thread": null,
+   "type": "building"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-003",
+   "id": "b:n010",
+   "mentions": [
+    [
+     "b-003",
+     "Tessaro Building Co."
+    ]
+   ],
+   "name": "Tessaro Building Co.",
+   "thread": null,
+   "type": "developer"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-003",
+   "id": "b:n011",
+   "mentions": [
+    [
+     "b-003",
+     "Old Quarry"
+    ],
+    [
+     "b-008",
+     "Old Quarry"
+    ],
+    [
+     "b-009",
+     "Old Quarry"
+    ],
+    [
+     "b-016",
+     "Old Quarry"
+    ],
+    [
+     "b-019",
+     "Old Quarry"
+    ]
+   ],
+   "name": "Old Quarry",
+   "thread": null,
+   "type": "neighborhood"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-003",
+   "id": "b:n012",
+   "mentions": [
+    [
+     "b-003",
+     "Quarry Gate"
+    ]
+   ],
+   "name": "Quarry Gate",
+   "thread": null,
+   "type": "station"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-004",
+   "id": "b:n013",
+   "mentions": [
+    [
+     "b-004",
+     "Harbor Point"
+    ],
+    [
+     "b-004",
+     "Harbor Point"
+    ],
+    [
+     "b-004",
+     "Harbor Point"
+    ],
+    [
+     "b-004",
+     "Harbor Point"
+    ],
+    [
+     "b-004",
+     "Harbor Point"
+    ],
+    [
+     "b-004",
+     "Harbor Point"
+    ],
+    [
+     "b-004",
+     "Harbor Point"
+    ]
+   ],
+   "name": "Harbor Point",
+   "thread": null,
+   "type": "building"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-004",
+   "id": "b:n014",
+   "mentions": [
+    [
+     "b-004",
+     "Harbor Row"
+    ],
+    [
+     "b-026",
+     "Harbor Row"
+    ]
+   ],
+   "name": "Harbor Row",
+   "thread": null,
+   "type": "neighborhood"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-005",
+   "id": "b:n015",
+   "mentions": [
+    [
+     "b-005",
+     "Marina Lindqvist"
+    ],
+    [
+     "b-005",
+     "Marina Lindqvist"
+    ],
+    [
+     "b-005",
+     "Marina Lindqvist"
+    ],
+    [
+     "b-018",
+     "Marina Lindqvist"
+    ]
+   ],
+   "name": "Marina Lindqvist",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-006",
+   "id": "b:n016",
+   "mentions": [
+    [
+     "b-006",
+     "Saltmarsh Gardens"
+    ],
+    [
+     "b-006",
+     "Saltmarsh Gardens"
+    ],
+    [
+     "b-006",
+     "Saltmarsh Gardens"
+    ],
+    [
+     "b-006",
+     "Saltmarsh Gardens"
+    ],
+    [
+     "b-006",
+     "Saltmarsh Gardens"
+    ],
+    [
+     "b-006",
+     "Saltmarsh Gardens"
+    ],
+    [
+     "b-013",
+     "Saltmarsh Gardens"
+    ],
+    [
+     "b-013",
+     "Saltmarsh Gardens"
+    ],
+    [
+     "b-020",
+     "Saltmarsh Gardens"
+    ],
+    [
+     "b-023",
+     "Saltmarsh Gardens"
+    ],
+    [
+     "b-042",
+     "Saltmarsh Gardens"
+    ]
+   ],
+   "name": "Saltmarsh Gardens",
+   "thread": null,
+   "type": "building"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-007",
+   "id": "b:n017",
+   "mentions": [
+    [
+     "b-007",
+     "Marina L"
+    ],
+    [
+     "b-007",
+     "Marina L"
+    ],
+    [
+     "b-007",
+     "Marina L"
+    ],
+    [
+     "b-011",
+     "Marina L."
+    ],
+    [
+     "b-028",
+     "Marina L"
+    ]
+   ],
+   "name": "Marina L",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-007",
+   "id": "b:n018",
+   "mentions": [
+    [
+     "b-007",
+     "Mill House"
+    ],
+    [
+     "b-007",
+     "Mill House"
+    ],
+    [
+     "b-008",
+     "Mill House"
+    ],
+    [
+     "b-008",
+     "Mill House"
+    ],
+    [
+     "b-008",
+     "Mill House"
+    ],
+    [
+     "b-008",
+     "Mill House"
+    ],
+    [
+     "b-008",
+     "Mill House"
+    ],
+    [
+     "b-008",
+     "Mill House"
+    ],
+    [
+     "b-008",
+     "Mill House"
+    ],
+    [
+     "b-008",
+     "Mill House"
+    ],
+    [
+     "b-018",
+     "Mill House"
+    ],
+    [
+     "b-036",
+     "Mill House"
+    ],
+    [
+     "b-041",
+     "Mill House"
+    ]
+   ],
+   "name": "Mill House",
+   "thread": null,
+   "type": "building"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-008",
+   "id": "b:n019",
+   "mentions": [
+    [
+     "b-008",
+     "Corvane Developments"
+    ]
+   ],
+   "name": "Corvane Developments",
+   "thread": null,
+   "type": "developer"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-008",
+   "id": "b:n020",
+   "mentions": [
+    [
+     "b-008",
+     "Mill Street station"
+    ]
+   ],
+   "name": "Mill Street station",
+   "thread": null,
+   "type": "station"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-009",
+   "id": "b:n021",
+   "mentions": [
+    [
+     "b-009",
+     "Oskar Brandt"
+    ],
+    [
+     "b-009",
+     "Oskar Brandt"
+    ],
+    [
+     "b-009",
+     "Oskar Brandt"
+    ],
+    [
+     "b-010",
+     "Oskar Brandt"
+    ],
+    [
+     "b-010",
+     "Oskar Brandt"
+    ],
+    [
+     "b-024",
+     "Oskar Brandt"
+    ],
+    [
+     "b-024",
+     "Oskar Brandt"
+    ],
+    [
+     "b-024",
+     "Oskar Brandt"
+    ],
+    [
+     "b-029",
+     "Oskar Brandt"
+    ]
+   ],
+   "name": "Oskar Brandt",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-012",
+   "id": "b:n022",
+   "mentions": [
+    [
+     "b-012",
+     "Leah Hartmann"
+    ],
+    [
+     "b-012",
+     "Leah Hartmann"
+    ],
+    [
+     "b-012",
+     "Leah Hartmann"
+    ],
+    [
+     "b-032",
+     "Leah Hartmann"
+    ]
+   ],
+   "name": "Leah Hartmann",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-013",
+   "id": "b:n023",
+   "mentions": [
+    [
+     "b-013",
+     "Leah H"
+    ],
+    [
+     "b-013",
+     "Leah H"
+    ],
+    [
+     "b-013",
+     "Leah H"
+    ],
+    [
+     "b-025",
+     "Leah H"
+    ],
+    [
+     "b-040",
+     "Leah H."
+    ]
+   ],
+   "name": "Leah H",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-015",
+   "id": "b:n024",
+   "mentions": [
+    [
+     "b-015",
+     "Oskar B."
+    ]
+   ],
+   "name": "Oskar B.",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-015",
+   "id": "b:n025",
+   "mentions": [
+    [
+     "b-015",
+     "Aurora"
+    ],
+    [
+     "b-022",
+     "Aurora"
+    ],
+    [
+     "b-038",
+     "Aurora"
+    ]
+   ],
+   "name": "Aurora",
+   "thread": null,
+   "type": "building"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-016",
+   "id": "b:n026",
+   "mentions": [
+    [
+     "b-016",
+     "Samuel Okonjo"
+    ],
+    [
+     "b-016",
+     "Samuel Okonjo"
+    ],
+    [
+     "b-016",
+     "Samuel Okonjo"
+    ],
+    [
+     "b-022",
+     "Samuel Okonjo"
+    ],
+    [
+     "b-038",
+     "Samuel Okonjo"
+    ]
+   ],
+   "name": "Samuel Okonjo",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-017",
+   "id": "b:n027",
+   "mentions": [
+    [
+     "b-017",
+     "Sam Okonjo"
+    ],
+    [
+     "b-017",
+     "Sam Okonjo"
+    ],
+    [
+     "b-034",
+     "Sam Okonjo"
+    ]
+   ],
+   "name": "Sam Okonjo",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-019",
+   "id": "b:n028",
+   "mentions": [
+    [
+     "b-019",
+     "Teresa Vilar"
+    ],
+    [
+     "b-019",
+     "Teresa Vilar"
+    ],
+    [
+     "b-019",
+     "Teresa Vilar"
+    ],
+    [
+     "b-020",
+     "Teresa Vilar"
+    ],
+    [
+     "b-020",
+     "Teresa Vilar"
+    ],
+    [
+     "b-030",
+     "Teresa Vilar"
+    ],
+    [
+     "b-035",
+     "Teresa Vilar"
+    ]
+   ],
+   "name": "Teresa Vilar",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-021",
+   "id": "b:n029",
+   "mentions": [
+    [
+     "b-021",
+     "Kenji Albright"
+    ],
+    [
+     "b-021",
+     "Kenji Albright"
+    ],
+    [
+     "b-021",
+     "Kenji Albright"
+    ]
+   ],
+   "name": "Kenji Albright",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-023",
+   "id": "b:n030",
+   "mentions": [
+    [
+     "b-023",
+     "Kenji A"
+    ],
+    [
+     "b-023",
+     "Kenji A"
+    ],
+    [
+     "b-031",
+     "Kenji A"
+    ],
+    [
+     "b-041",
+     "Kenji A."
+    ]
+   ],
+   "name": "Kenji A",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-026",
+   "id": "b:n031",
+   "mentions": [
+    [
+     "b-026",
+     "Nadia Ferreira"
+    ],
+    [
+     "b-026",
+     "Nadia Ferreira"
+    ],
+    [
+     "b-026",
+     "Nadia Ferreira"
+    ],
+    [
+     "b-027",
+     "Nadia Ferreira"
+    ],
+    [
+     "b-027",
+     "Nadia Ferreira"
+    ],
+    [
+     "b-036",
+     "Nadia Ferreira"
+    ]
+   ],
+   "name": "Nadia Ferreira",
+   "thread": null,
+   "type": "client"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-027",
+   "id": "b:n032",
+   "mentions": [
+    [
+     "b-027",
+     "Mill House tower"
+    ]
+   ],
+   "name": "Mill House tower",
+   "thread": null,
+   "type": "building"
+  },
+  {
+   "aliases": [],
+   "created_in": "b-039",
+   "id": "b:n033",
+   "mentions": [
+    [
+     "b-039",
+     "Lofts"
+    ]
+   ],
+   "name": "Lofts",
+   "thread": null,
+   "type": "building"
+  }
+ ],
+ "temporal": false
+}

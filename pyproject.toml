@@ -1,0 +1,12 @@
+[project]
+name = "incgraph"
+version = "0.1.0"
+description = "An incrementally growing temporal knowledge graph against batch GraphRAG and hybrid search, measured on a synthetic real-estate brokerage."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Guilherme Lucena Peixoto" }]
+requires-python = ">=3.11"
+dependencies = ["numpy", "requests"]
+
+[project.scripts]
+incgraph = "incgraph.cli:main"

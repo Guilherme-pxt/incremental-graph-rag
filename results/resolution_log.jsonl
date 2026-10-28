@@ -1,0 +1,250 @@
+{"candidates": [], "episode": "a-001", "node": "a:n001", "route": "new", "surface": "Aurora Residences", "type": "building"}
+{"candidates": [], "episode": "a-001", "node": "a:n002", "route": "new", "surface": "Halden Group", "type": "developer"}
+{"candidates": [], "episode": "a-001", "node": "a:n003", "route": "new", "surface": "Northbank", "type": "neighborhood"}
+{"candidates": [], "episode": "a-001", "node": "a:n004", "route": "new", "surface": "Riverside station", "type": "station"}
+{"candidates": [], "episode": "a-002", "node": "a:n005", "route": "new", "surface": "Aurora Park", "type": "building"}
+{"candidates": [], "episode": "a-002", "node": "a:n006", "route": "new", "surface": "Brightwater Homes", "type": "developer"}
+{"candidates": [], "episode": "a-002", "node": "a:n007", "route": "new", "surface": "Saltmarsh", "type": "neighborhood"}
+{"candidates": [], "episode": "a-002", "node": "a:n008", "route": "new", "surface": "Harbor Central", "type": "station"}
+{"candidates": [], "episode": "a-003", "node": "a:n009", "route": "new", "surface": "Quarry Lofts", "type": "building"}
+{"candidates": [], "episode": "a-003", "node": "a:n010", "route": "new", "surface": "Tessaro Building Co", "type": "developer"}
+{"candidates": [], "episode": "a-003", "node": "a:n011", "route": "new", "surface": "Old Quarry", "type": "neighborhood"}
+{"candidates": [], "episode": "a-003", "node": "a:n012", "route": "new", "surface": "Quarry Gate", "type": "station"}
+{"candidates": [], "episode": "a-004", "node": "a:n013", "route": "new", "surface": "Harbor Point", "type": "building"}
+{"candidates": ["a:n002"], "episode": "a-004", "node": "a:n002", "route": "exact", "surface": "Halden Group", "type": "developer"}
+{"candidates": [], "episode": "a-004", "node": "a:n014", "route": "new", "surface": "Harbor Row", "type": "neighborhood"}
+{"candidates": ["a:n008"], "episode": "a-004", "node": "a:n008", "route": "exact", "surface": "Harbor Central", "type": "station"}
+{"candidates": [], "episode": "a-005", "node": "a:n015", "route": "new", "surface": "Saltmarsh Gardens", "type": "building"}
+{"candidates": ["a:n006"], "episode": "a-005", "node": "a:n006", "route": "exact", "surface": "Brightwater Homes", "type": "developer"}
+{"candidates": ["a:n007"], "episode": "a-005", "node": "a:n007", "route": "exact", "surface": "Saltmarsh", "type": "neighborhood"}
+{"candidates": ["a:n004"], "episode": "a-005", "node": "a:n004", "route": "exact", "surface": "Riverside station", "type": "station"}
+{"candidates": [], "episode": "a-006", "node": "a:n016", "route": "thread-new", "surface": "Katherine Moreau", "type": "client"}
+{"candidates": ["a:n007"], "episode": "a-006", "node": "a:n007", "route": "exact", "surface": "Saltmarsh", "type": "neighborhood"}
+{"candidates": [], "episode": "a-007", "node": "a:n017", "route": "new", "surface": "Mill House", "type": "building"}
+{"candidates": [], "episode": "a-007", "node": "a:n018", "route": "new", "surface": "Corvane Developments", "type": "developer"}
+{"candidates": ["a:n011"], "episode": "a-007", "node": "a:n011", "route": "exact", "surface": "Old Quarry", "type": "neighborhood"}
+{"candidates": [], "episode": "a-007", "node": "a:n019", "route": "new", "surface": "Mill Street", "type": "station"}
+{"candidates": [], "episode": "a-008", "node": "a:n016", "route": "thread", "surface": "Kate Moreau", "type": "client"}
+{"candidates": ["a:n017"], "episode": "a-008", "node": "a:n017", "route": "rule", "surface": "Mill House tower", "type": "building"}
+{"candidates": [], "episode": "a-009", "node": "a:n020", "route": "thread-new", "surface": "Marina Okafor", "type": "client"}
+{"candidates": [], "episode": "a-009", "node": "a:n021", "route": "new", "surface": "Linden Hill", "type": "neighborhood"}
+{"candidates": [], "episode": "a-010", "node": "a:n020", "route": "thread", "surface": "Marina Okafor", "type": "client"}
+{"candidates": ["a:n009"], "episode": "a-010", "node": "a:n009", "route": "exact", "surface": "Quarry Lofts", "type": "building"}
+{"candidates": [], "episode": "a-011", "node": "a:n022", "route": "thread-new", "surface": "Jonah Pellegrini", "type": "client"}
+{"candidates": ["a:n011"], "episode": "a-011", "node": "a:n011", "route": "exact", "surface": "Old Quarry", "type": "neighborhood"}
+{"candidates": [], "episode": "a-012", "node": "a:n022", "route": "thread", "surface": "Jonah Pellegrini", "type": "client"}
+{"candidates": ["a:n009"], "episode": "a-012", "node": "a:n009", "route": "rule", "surface": "the Lofts", "type": "building"}
+{"candidates": [], "episode": "a-013", "node": "a:n023", "route": "thread-new", "surface": "Ingrid Sato", "type": "client"}
+{"candidates": ["a:n003"], "episode": "a-013", "node": "a:n003", "route": "exact", "surface": "Northbank", "type": "neighborhood"}
+{"candidates": [], "episode": "a-014", "node": "a:n023", "route": "thread", "surface": "Ingrid Sato", "type": "client"}
+{"candidates": ["a:n017"], "episode": "a-014", "node": "a:n017", "route": "exact", "surface": "Mill House", "type": "building"}
+{"candidates": [], "episode": "a-016", "node": "a:n024", "route": "thread-new", "surface": "Felipe Arantes", "type": "client"}
+{"candidates": ["a:n003"], "episode": "a-016", "node": "a:n003", "route": "exact", "surface": "Northbank", "type": "neighborhood"}
+{"candidates": [], "episode": "a-017", "node": "a:n022", "route": "thread", "surface": "Jonah Pellegrini", "type": "client"}
+{"candidates": [], "episode": "a-018", "node": "a:n024", "route": "thread", "surface": "Fil Arantes", "type": "client"}
+{"candidates": ["a:n015"], "episode": "a-018", "node": "a:n015", "route": "exact", "surface": "Saltmarsh Gardens", "type": "building"}
+{"candidates": ["a:n016"], "episode": "a-020", "node": "a:n016", "route": "exact", "surface": "Katherine Moreau", "type": "client"}
+{"candidates": ["a:n020"], "episode": "a-021", "node": "a:n020", "route": "rule", "surface": "Marina O.", "type": "client"}
+{"candidates": ["a:n009"], "episode": "a-021", "node": "a:n009", "route": "exact", "surface": "Lofts", "type": "building"}
+{"candidates": [], "episode": "a-022", "node": "a:n025", "route": "thread-new", "surface": "Ruth Castellano", "type": "client"}
+{"candidates": ["a:n021"], "episode": "a-022", "node": "a:n021", "route": "exact", "surface": "Linden Hill", "type": "neighborhood"}
+{"candidates": [], "episode": "a-023", "node": "a:n025", "route": "thread", "surface": "Ruth C", "type": "client"}
+{"candidates": ["a:n001"], "episode": "a-023", "node": "a:n001", "route": "exact", "surface": "Aurora Residences", "type": "building"}
+{"candidates": ["a:n023"], "episode": "a-024", "node": "a:n023", "route": "exact", "surface": "Ingrid Sato", "type": "client"}
+{"candidates": ["a:n017"], "episode": "a-024", "node": "a:n017", "route": "exact", "surface": "Mill House tower", "type": "building"}
+{"candidates": [], "episode": "a-024", "node": "a:n026", "route": "new", "surface": "Mill House tower on 2026-03-06", "type": "building"}
+{"candidates": [], "episode": "a-025", "node": "a:n027", "route": "thread-new", "surface": "William Thorne", "type": "client"}
+{"candidates": ["a:n021"], "episode": "a-025", "node": "a:n021", "route": "exact", "surface": "Linden Hill", "type": "neighborhood"}
+{"candidates": ["a:n022"], "episode": "a-026", "node": "a:n022", "route": "exact", "surface": "Jonah P.", "type": "client"}
+{"candidates": [], "episode": "a-027", "node": "a:n027", "route": "thread", "surface": "Will Thorne", "type": "client"}
+{"candidates": ["a:n005"], "episode": "a-027", "node": "a:n005", "route": "exact", "surface": "Aurora Park", "type": "building"}
+{"candidates": ["a:n016"], "episode": "a-028", "node": "a:n016", "route": "exact", "surface": "Katherine Moreau", "type": "client"}
+{"candidates": ["a:n017"], "episode": "a-028", "node": "a:n017", "route": "exact", "surface": "Mill House tower", "type": "building"}
+{"candidates": [], "episode": "a-029", "node": "a:n020", "route": "thread", "surface": "Marina Okafor", "type": "client"}
+{"candidates": ["a:n013"], "episode": "a-029", "node": "a:n013", "route": "rule", "surface": "Harbor Point Tower", "type": "building"}
+{"candidates": ["a:n009"], "episode": "a-029", "node": "a:n009", "route": "exact", "surface": "Quarry Lofts", "type": "building"}
+{"candidates": [], "episode": "a-030", "node": "a:n024", "route": "thread", "surface": "Fil Arantes", "type": "client"}
+{"candidates": [], "episode": "a-031", "node": "a:n025", "route": "thread", "surface": "Ruth C", "type": "client"}
+{"candidates": ["a:n022"], "episode": "a-032", "node": "a:n022", "route": "exact", "surface": "Jonah P.", "type": "client"}
+{"candidates": ["a:n017"], "episode": "a-032", "node": "a:n017", "route": "exact", "surface": "Mill House", "type": "building"}
+{"candidates": ["a:n025"], "episode": "a-033", "node": "a:n025", "route": "exact", "surface": "Ruth Castellano", "type": "client"}
+{"candidates": ["a:n005"], "episode": "a-033", "node": "a:n005", "route": "exact", "surface": "Aurora Park", "type": "building"}
+{"candidates": ["a:n027"], "episode": "a-034", "node": "a:n027", "route": "exact", "surface": "William Thorne", "type": "client"}
+{"candidates": ["a:n005"], "episode": "a-034", "node": "a:n005", "route": "exact", "surface": "Aurora Park", "type": "building"}
+{"candidates": [], "episode": "a-036", "node": "a:n023", "route": "thread", "surface": "Ingrid Sato", "type": "client"}
+{"candidates": ["a:n020"], "episode": "a-037", "node": "a:n020", "route": "exact", "surface": "Marina Okafor", "type": "client"}
+{"candidates": ["a:n001"], "episode": "a-037", "node": "a:n001", "route": "exact", "surface": "Aurora Residences", "type": "building"}
+{"candidates": ["a:n024"], "episode": "a-038", "node": "a:n024", "route": "exact", "surface": "Felipe Arantes", "type": "client"}
+{"candidates": ["a:n015"], "episode": "a-038", "node": "a:n015", "route": "exact", "surface": "Saltmarsh Gardens", "type": "building"}
+{"candidates": [], "episode": "a-039", "node": "a:n016", "route": "thread", "surface": "Kate Moreau", "type": "client"}
+{"candidates": ["a:n013"], "episode": "a-041", "node": "a:n013", "route": "exact", "surface": "Harbor Point Tower", "type": "building"}
+{"candidates": ["a:n023"], "episode": "a-042", "node": "a:n023", "route": "rule", "surface": "Ingrid S.", "type": "client"}
+{"candidates": ["a:n017"], "episode": "a-042", "node": "a:n017", "route": "exact", "surface": "Mill House tower", "type": "building"}
+{"candidates": ["a:n009"], "episode": "a-043", "node": "a:n009", "route": "exact", "surface": "Quarry Lofts", "type": "building"}
+{"candidates": ["a:n001"], "episode": "a-044", "node": "a:n001", "route": "exact", "surface": "Aurora Residences", "type": "building"}
+{"candidates": [], "episode": "b-001", "node": "b:n001", "route": "new", "surface": "Aurora Residences", "type": "building"}
+{"candidates": [], "episode": "b-001", "node": "b:n002", "route": "new", "surface": "Halden Group", "type": "developer"}
+{"candidates": [], "episode": "b-001", "node": "b:n003", "route": "new", "surface": "Northbank", "type": "neighborhood"}
+{"candidates": [], "episode": "b-001", "node": "b:n004", "route": "new", "surface": "Riverside station", "type": "station"}
+{"candidates": [], "episode": "b-002", "node": "b:n005", "route": "new", "surface": "Aurora Park", "type": "building"}
+{"candidates": [], "episode": "b-002", "node": "b:n006", "route": "new", "surface": "Brightwater Homes", "type": "developer"}
+{"candidates": [], "episode": "b-002", "node": "b:n007", "route": "new", "surface": "Saltmarsh", "type": "neighborhood"}
+{"candidates": [], "episode": "b-002", "node": "b:n008", "route": "new", "surface": "Harbor Central", "type": "station"}
+{"candidates": [], "episode": "b-003", "node": "b:n009", "route": "new", "surface": "Quarry Lofts", "type": "building"}
+{"candidates": [], "episode": "b-003", "node": "b:n010", "route": "new", "surface": "Tessaro Building Co.", "type": "developer"}
+{"candidates": [], "episode": "b-003", "node": "b:n011", "route": "new", "surface": "Old Quarry", "type": "neighborhood"}
+{"candidates": [], "episode": "b-003", "node": "b:n012", "route": "new", "surface": "Quarry Gate", "type": "station"}
+{"candidates": [], "episode": "b-004", "node": "b:n013", "route": "new", "surface": "Harbor Point", "type": "building"}
+{"candidates": ["b:n002"], "episode": "b-004", "node": "b:n002", "route": "exact", "surface": "Halden Group", "type": "developer"}
+{"candidates": [], "episode": "b-004", "node": "b:n014", "route": "new", "surface": "Harbor Row", "type": "neighborhood"}
+{"candidates": ["b:n008"], "episode": "b-004", "node": "b:n008", "route": "exact", "surface": "Harbor Central", "type": "station"}
+{"candidates": [], "episode": "b-005", "node": "b:n015", "route": "thread-new", "surface": "Marina Lindqvist", "type": "client"}
+{"candidates": ["b:n007"], "episode": "b-005", "node": "b:n007", "route": "exact", "surface": "Saltmarsh", "type": "neighborhood"}
+{"candidates": [], "episode": "b-006", "node": "b:n016", "route": "new", "surface": "Saltmarsh Gardens", "type": "building"}
+{"candidates": ["b:n006"], "episode": "b-006", "node": "b:n006", "route": "exact", "surface": "Brightwater Homes", "type": "developer"}
+{"candidates": ["b:n007"], "episode": "b-006", "node": "b:n007", "route": "exact", "surface": "Saltmarsh", "type": "neighborhood"}
+{"candidates": ["b:n004"], "episode": "b-006", "node": "b:n004", "route": "exact", "surface": "Riverside station", "type": "station"}
+{"candidates": [], "episode": "b-007", "node": "b:n015", "route": "thread", "surface": "Marina L", "type": "client"}
+{"candidates": [], "episode": "b-007", "node": "b:n017", "route": "new", "surface": "Mill House", "type": "building"}
+{"candidates": ["b:n017"], "episode": "b-008", "node": "b:n017", "route": "exact", "surface": "Mill House", "type": "building"}
+{"candidates": [], "episode": "b-008", "node": "b:n018", "route": "new", "surface": "Corvane Developments", "type": "developer"}
+{"candidates": ["b:n011"], "episode": "b-008", "node": "b:n011", "route": "exact", "surface": "Old Quarry", "type": "neighborhood"}
+{"candidates": [], "episode": "b-008", "node": "b:n019", "route": "new", "surface": "Mill Street station", "type": "station"}
+{"candidates": [], "episode": "b-009", "node": "b:n020", "route": "thread-new", "surface": "Oskar Brandt", "type": "client"}
+{"candidates": ["b:n011"], "episode": "b-009", "node": "b:n011", "route": "exact", "surface": "Old Quarry", "type": "neighborhood"}
+{"candidates": [], "episode": "b-010", "node": "b:n020", "route": "thread", "surface": "Oskar Brandt", "type": "client"}
+{"candidates": ["b:n001"], "episode": "b-010", "node": "b:n001", "route": "exact", "surface": "Aurora Residences", "type": "building"}
+{"candidates": ["b:n015"], "episode": "b-011", "node": "b:n015", "route": "exact", "surface": "Marina L.", "type": "client"}
+{"candidates": [], "episode": "b-012", "node": "b:n021", "route": "thread-new", "surface": "Leah Hartmann", "type": "client"}
+{"candidates": ["b:n003"], "episode": "b-012", "node": "b:n003", "route": "exact", "surface": "Northbank", "type": "neighborhood"}
+{"candidates": [], "episode": "b-013", "node": "b:n021", "route": "thread", "surface": "Leah H", "type": "client"}
+{"candidates": ["b:n016"], "episode": "b-013", "node": "b:n016", "route": "exact", "surface": "Saltmarsh Gardens", "type": "building"}
+{"candidates": ["b:n020"], "episode": "b-015", "node": "b:n020", "route": "rule", "surface": "Oskar B.", "type": "client"}
+{"candidates": ["b:n001", "b:n005"], "episode": "b-015", "node": "b:n001", "route": "llm", "surface": "Aurora", "type": "building"}
+{"candidates": [], "episode": "b-016", "node": "b:n022", "route": "thread-new", "surface": "Samuel Okonjo", "type": "client"}
+{"candidates": ["b:n011"], "episode": "b-016", "node": "b:n011", "route": "exact", "surface": "Old Quarry", "type": "neighborhood"}
+{"candidates": [], "episode": "b-017", "node": "b:n022", "route": "thread", "surface": "Sam Okonjo", "type": "client"}
+{"candidates": ["b:n001"], "episode": "b-017", "node": "b:n001", "route": "exact", "surface": "Aurora Residences", "type": "building"}
+{"candidates": ["b:n015"], "episode": "b-018", "node": "b:n015", "route": "exact", "surface": "Marina Lindqvist", "type": "client"}
+{"candidates": ["b:n017"], "episode": "b-018", "node": "b:n017", "route": "exact", "surface": "Mill House", "type": "building"}
+{"candidates": [], "episode": "b-019", "node": "b:n023", "route": "thread-new", "surface": "Teresa Vilar", "type": "client"}
+{"candidates": ["b:n011"], "episode": "b-019", "node": "b:n011", "route": "exact", "surface": "Old Quarry", "type": "neighborhood"}
+{"candidates": [], "episode": "b-020", "node": "b:n023", "route": "thread", "surface": "Teresa Vilar", "type": "client"}
+{"candidates": ["b:n016"], "episode": "b-020", "node": "b:n016", "route": "exact", "surface": "Saltmarsh Gardens", "type": "building"}
+{"candidates": [], "episode": "b-021", "node": "b:n024", "route": "thread-new", "surface": "Kenji Albright", "type": "client"}
+{"candidates": ["b:n007"], "episode": "b-021", "node": "b:n007", "route": "exact", "surface": "Saltmarsh", "type": "neighborhood"}
+{"candidates": ["b:n022"], "episode": "b-022", "node": "b:n022", "route": "exact", "surface": "Samuel Okonjo", "type": "client"}
+{"candidates": ["b:n001", "b:n005"], "episode": "b-022", "node": "b:n001", "route": "llm", "surface": "Aurora", "type": "building"}
+{"candidates": [], "episode": "b-023", "node": "b:n024", "route": "thread", "surface": "Kenji A", "type": "client"}
+{"candidates": ["b:n016"], "episode": "b-023", "node": "b:n016", "route": "exact", "surface": "Saltmarsh Gardens", "type": "building"}
+{"candidates": [], "episode": "b-024", "node": "b:n020", "route": "thread", "surface": "Oskar Brandt", "type": "client"}
+{"candidates": ["b:n005"], "episode": "b-024", "node": "b:n005", "route": "exact", "surface": "Aurora Park", "type": "building"}
+{"candidates": ["b:n001"], "episode": "b-024", "node": "b:n001", "route": "exact", "surface": "Aurora Residences", "type": "building"}
+{"candidates": [], "episode": "b-025", "node": "b:n021", "route": "thread", "surface": "Leah H", "type": "client"}
+{"candidates": [], "episode": "b-026", "node": "b:n025", "route": "thread-new", "surface": "Nadia Ferreira", "type": "client"}
+{"candidates": ["b:n014"], "episode": "b-026", "node": "b:n014", "route": "exact", "surface": "Harbor Row", "type": "neighborhood"}
+{"candidates": [], "episode": "b-027", "node": "b:n025", "route": "thread", "surface": "Nadia Ferreira", "type": "client"}
+{"candidates": ["b:n017"], "episode": "b-027", "node": "b:n017", "route": "rule", "surface": "Mill House tower", "type": "building"}
+{"candidates": [], "episode": "b-028", "node": "b:n015", "route": "thread", "surface": "Marina L", "type": "client"}
+{"candidates": ["b:n020"], "episode": "b-029", "node": "b:n020", "route": "exact", "surface": "Oskar Brandt", "type": "client"}
+{"candidates": ["b:n005"], "episode": "b-029", "node": "b:n005", "route": "exact", "surface": "Aurora Park", "type": "building"}
+{"candidates": [], "episode": "b-030", "node": "b:n023", "route": "thread", "surface": "Teresa Vilar", "type": "client"}
+{"candidates": [], "episode": "b-031", "node": "b:n024", "route": "thread", "surface": "Kenji A", "type": "client"}
+{"candidates": ["b:n021"], "episode": "b-032", "node": "b:n021", "route": "exact", "surface": "Leah Hartmann", "type": "client"}
+{"candidates": [], "episode": "b-034", "node": "b:n022", "route": "thread", "surface": "Sam Okonjo", "type": "client"}
+{"candidates": ["b:n023"], "episode": "b-035", "node": "b:n023", "route": "exact", "surface": "Teresa Vilar", "type": "client"}
+{"candidates": ["b:n009"], "episode": "b-035", "node": "b:n009", "route": "exact", "surface": "Quarry Lofts", "type": "building"}
+{"candidates": ["b:n025"], "episode": "b-036", "node": "b:n025", "route": "exact", "surface": "Nadia Ferreira", "type": "client"}
+{"candidates": ["b:n017"], "episode": "b-036", "node": "b:n017", "route": "exact", "surface": "Mill House", "type": "building"}
+{"candidates": ["b:n005"], "episode": "b-037", "node": "b:n005", "route": "exact", "surface": "Aurora Park", "type": "building"}
+{"candidates": ["b:n022"], "episode": "b-038", "node": "b:n022", "route": "exact", "surface": "Samuel Okonjo", "type": "client"}
+{"candidates": ["b:n001", "b:n005"], "episode": "b-038", "node": "b:n026", "route": "llm-new", "surface": "Aurora", "type": "building"}
+{"candidates": ["b:n009"], "episode": "b-039", "node": "b:n009", "route": "rule", "surface": "Lofts", "type": "building"}
+{"candidates": ["b:n021"], "episode": "b-040", "node": "b:n021", "route": "exact", "surface": "Leah H.", "type": "client"}
+{"candidates": ["b:n009"], "episode": "b-040", "node": "b:n009", "route": "exact", "surface": "Quarry Lofts", "type": "building"}
+{"candidates": ["b:n024"], "episode": "b-041", "node": "b:n024", "route": "exact", "surface": "Kenji A.", "type": "client"}
+{"candidates": ["b:n017"], "episode": "b-041", "node": "b:n017", "route": "exact", "surface": "Mill House", "type": "building"}
+{"candidates": ["b:n016"], "episode": "b-042", "node": "b:n016", "route": "exact", "surface": "Saltmarsh Gardens", "type": "building"}
+{"candidates": [], "episode": "c-001", "node": "c:n001", "route": "new", "surface": "Aurora Residences", "type": "building"}
+{"candidates": [], "episode": "c-001", "node": "c:n002", "route": "new", "surface": "Halden Group", "type": "developer"}
+{"candidates": [], "episode": "c-001", "node": "c:n003", "route": "new", "surface": "Northbank", "type": "neighborhood"}
+{"candidates": [], "episode": "c-001", "node": "c:n004", "route": "new", "surface": "Riverside station", "type": "station"}
+{"candidates": [], "episode": "c-002", "node": "c:n005", "route": "new", "surface": "Aurora Park", "type": "building"}
+{"candidates": [], "episode": "c-002", "node": "c:n006", "route": "new", "surface": "Brightwater Homes", "type": "developer"}
+{"candidates": [], "episode": "c-002", "node": "c:n007", "route": "new", "surface": "Saltmarsh", "type": "neighborhood"}
+{"candidates": [], "episode": "c-002", "node": "c:n008", "route": "new", "surface": "Harbor Central", "type": "station"}
+{"candidates": [], "episode": "c-003", "node": "c:n009", "route": "new", "surface": "Linden Court", "type": "building"}
+{"candidates": [], "episode": "c-003", "node": "c:n010", "route": "new", "surface": "Corvane Developments", "type": "developer"}
+{"candidates": [], "episode": "c-003", "node": "c:n011", "route": "new", "surface": "Linden Hill", "type": "neighborhood"}
+{"candidates": [], "episode": "c-003", "node": "c:n012", "route": "new", "surface": "Mill Street station", "type": "station"}
+{"candidates": [], "episode": "c-004", "node": "c:n013", "route": "new", "surface": "Quarry Lofts", "type": "building"}
+{"candidates": [], "episode": "c-004", "node": "c:n014", "route": "new", "surface": "Tessaro Building Co", "type": "developer"}
+{"candidates": [], "episode": "c-004", "node": "c:n015", "route": "new", "surface": "Old Quarry", "type": "neighborhood"}
+{"candidates": [], "episode": "c-004", "node": "c:n016", "route": "new", "surface": "Quarry Gate", "type": "station"}
+{"candidates": [], "episode": "c-005", "node": "c:n017", "route": "new", "surface": "Mill House", "type": "building"}
+{"candidates": ["c:n010"], "episode": "c-005", "node": "c:n010", "route": "exact", "surface": "Corvane Developments", "type": "developer"}
+{"candidates": ["c:n015"], "episode": "c-005", "node": "c:n015", "route": "exact", "surface": "Old Quarry", "type": "neighborhood"}
+{"candidates": ["c:n012"], "episode": "c-005", "node": "c:n012", "route": "exact", "surface": "Mill Street station", "type": "station"}
+{"candidates": [], "episode": "c-006", "node": "c:n018", "route": "new", "surface": "Northbank One", "type": "building"}
+{"candidates": ["c:n014"], "episode": "c-006", "node": "c:n014", "route": "exact", "surface": "Tessaro Building Co", "type": "developer"}
+{"candidates": ["c:n003"], "episode": "c-006", "node": "c:n003", "route": "exact", "surface": "Northbank", "type": "neighborhood"}
+{"candidates": ["c:n004"], "episode": "c-006", "node": "c:n004", "route": "exact", "surface": "Riverside station", "type": "station"}
+{"candidates": [], "episode": "c-007", "node": "c:n019", "route": "thread-new", "surface": "Daniel Reyes", "type": "client"}
+{"candidates": ["c:n011"], "episode": "c-007", "node": "c:n011", "route": "exact", "surface": "Linden Hill", "type": "neighborhood"}
+{"candidates": [], "episode": "c-008", "node": "c:n019", "route": "thread", "surface": "Dani Reyes", "type": "client"}
+{"candidates": ["c:n018"], "episode": "c-008", "node": "c:n018", "route": "exact", "surface": "Northbank One", "type": "building"}
+{"candidates": [], "episode": "c-009", "node": "c:n020", "route": "thread-new", "surface": "Daniel Weber", "type": "client"}
+{"candidates": [], "episode": "c-009", "node": "c:n021", "route": "new", "surface": "Harbor Row", "type": "neighborhood"}
+{"candidates": [], "episode": "c-010", "node": "c:n020", "route": "thread", "surface": "Daniel W", "type": "client"}
+{"candidates": ["c:n017"], "episode": "c-010", "node": "c:n017", "route": "exact", "surface": "Mill House", "type": "building"}
+{"candidates": [], "episode": "c-011", "node": "c:n022", "route": "thread-new", "surface": "Beatriz Lund", "type": "client"}
+{"candidates": [], "episode": "c-011", "node": "c:n023", "route": "new", "surface": "Harbor Row", "type": "building"}
+{"candidates": [], "episode": "c-012", "node": "c:n022", "route": "thread", "surface": "Bia Lund", "type": "client"}
+{"candidates": ["c:n013"], "episode": "c-012", "node": "c:n013", "route": "exact", "surface": "Quarry Lofts", "type": "building"}
+{"candidates": [], "episode": "c-013", "node": "c:n024", "route": "thread-new", "surface": "Hugo Tamsin", "type": "client"}
+{"candidates": ["c:n011"], "episode": "c-013", "node": "c:n011", "route": "exact", "surface": "Linden Hill", "type": "neighborhood"}
+{"candidates": [], "episode": "c-014", "node": "c:n024", "route": "thread", "surface": "Hugo Tamsin", "type": "client"}
+{"candidates": ["c:n009"], "episode": "c-014", "node": "c:n009", "route": "exact", "surface": "Linden Court", "type": "building"}
+{"candidates": ["c:n019"], "episode": "c-016", "node": "c:n019", "route": "rule", "surface": "Daniel R.", "type": "client"}
+{"candidates": ["c:n020"], "episode": "c-017", "node": "c:n020", "route": "exact", "surface": "Daniel W.", "type": "client"}
+{"candidates": ["c:n005"], "episode": "c-017", "node": "c:n005", "route": "exact", "surface": "Aurora Park", "type": "building"}
+{"candidates": [], "episode": "c-018", "node": "c:n025", "route": "thread-new", "surface": "Clara Novak", "type": "client"}
+{"candidates": ["c:n023"], "episode": "c-018", "node": "c:n023", "route": "exact", "surface": "Harbor Row", "type": "building"}
+{"candidates": [], "episode": "c-019", "node": "c:n025", "route": "thread", "surface": "Clara Novak", "type": "client"}
+{"candidates": ["c:n005"], "episode": "c-019", "node": "c:n005", "route": "exact", "surface": "Aurora Park", "type": "building"}
+{"candidates": [], "episode": "c-020", "node": "c:n022", "route": "thread", "surface": "Bia Lund", "type": "client"}
+{"candidates": [], "episode": "c-021", "node": "c:n026", "route": "thread-new", "surface": "Amir Haddad", "type": "client"}
+{"candidates": ["c:n015"], "episode": "c-021", "node": "c:n015", "route": "exact", "surface": "Old Quarry", "type": "neighborhood"}
+{"candidates": [], "episode": "c-022", "node": "c:n026", "route": "thread", "surface": "Amir H", "type": "client"}
+{"candidates": ["c:n009"], "episode": "c-022", "node": "c:n009", "route": "exact", "surface": "Linden Court", "type": "building"}
+{"candidates": ["c:n019"], "episode": "c-023", "node": "c:n019", "route": "exact", "surface": "Dani Reyes", "type": "client"}
+{"candidates": ["c:n005"], "episode": "c-023", "node": "c:n005", "route": "exact", "surface": "Aurora Park", "type": "building"}
+{"candidates": ["c:n009"], "episode": "c-024", "node": "c:n009", "route": "exact", "surface": "Linden Court", "type": "building"}
+{"candidates": [], "episode": "c-025", "node": "c:n027", "route": "thread-new", "surface": "Elisabeth Grant", "type": "client"}
+{"candidates": ["c:n011"], "episode": "c-025", "node": "c:n011", "route": "exact", "surface": "Linden Hill", "type": "neighborhood"}
+{"candidates": ["c:n017"], "episode": "c-026", "node": "c:n017", "route": "exact", "surface": "Mill House", "type": "building"}
+{"candidates": [], "episode": "c-027", "node": "c:n027", "route": "thread", "surface": "Liz Grant", "type": "client"}
+{"candidates": ["c:n001"], "episode": "c-027", "node": "c:n001", "route": "exact", "surface": "Aurora Residences", "type": "building"}
+{"candidates": [], "episode": "c-028", "node": "c:n020", "route": "thread", "surface": "Daniel W", "type": "client"}
+{"candidates": ["c:n018"], "episode": "c-028", "node": "c:n018", "route": "exact", "surface": "N1", "type": "building"}
+{"candidates": ["c:n017"], "episode": "c-028", "node": "c:n017", "route": "exact", "surface": "Mill House", "type": "building"}
+{"candidates": ["c:n024"], "episode": "c-029", "node": "c:n024", "route": "exact", "surface": "Hugo Tamsin", "type": "client"}
+{"candidates": ["c:n013"], "episode": "c-029", "node": "c:n013", "route": "exact", "surface": "Quarry Lofts", "type": "building"}
+{"candidates": [], "episode": "c-030", "node": "c:n022", "route": "thread", "surface": "Bia Lund", "type": "client"}
+{"candidates": [], "episode": "c-031", "node": "c:n025", "route": "thread", "surface": "Clara Novak", "type": "client"}
+{"candidates": ["c:n026"], "episode": "c-032", "node": "c:n026", "route": "exact", "surface": "Amir H.", "type": "client"}
+{"candidates": ["c:n022"], "episode": "c-033", "node": "c:n022", "route": "exact", "surface": "Bia Lund", "type": "client"}
+{"candidates": ["c:n017"], "episode": "c-033", "node": "c:n017", "route": "rule", "surface": "Mill House tower", "type": "building"}
+{"candidates": ["c:n019"], "episode": "c-035", "node": "c:n019", "route": "exact", "surface": "Dani Reyes", "type": "client"}
+{"candidates": ["c:n027"], "episode": "c-036", "node": "c:n027", "route": "exact", "surface": "Liz Grant", "type": "client"}
+{"candidates": ["c:n001", "c:n005"], "episode": "c-036", "node": "c:n001", "route": "llm", "surface": "Aurora", "type": "building"}
+{"candidates": ["c:n020"], "episode": "c-038", "node": "c:n020", "route": "exact", "surface": "Daniel W.", "type": "client"}
+{"candidates": ["c:n018"], "episode": "c-038", "node": "c:n018", "route": "exact", "surface": "Northbank One", "type": "building"}
+{"candidates": [], "episode": "c-039", "node": "c:n024", "route": "thread", "surface": "Hugo Tamsin", "type": "client"}
+{"candidates": ["c:n025"], "episode": "c-040", "node": "c:n025", "route": "exact", "surface": "Clara Novak", "type": "client"}
+{"candidates": ["c:n013"], "episode": "c-040", "node": "c:n013", "route": "exact", "surface": "Quarry Lofts", "type": "building"}
+{"candidates": ["c:n026"], "episode": "c-042", "node": "c:n026", "route": "exact", "surface": "Amir H.", "type": "client"}
+{"candidates": ["c:n001"], "episode": "c-042", "node": "c:n001", "route": "exact", "surface": "Aurora Residences", "type": "building"}
+{"candidates": ["c:n024"], "episode": "c-043", "node": "c:n024", "route": "exact", "surface": "Hugo Tamsin", "type": "client"}
+{"candidates": ["c:n005"], "episode": "c-043", "node": "c:n005", "route": "exact", "surface": "Aurora Park", "type": "building"}
+{"candidates": ["c:n001"], "episode": "c-044", "node": "c:n001", "route": "exact", "surface": "Aurora Residences", "type": "building"}

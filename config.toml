@@ -1,0 +1,38 @@
+# Default configuration for `python -m incgraph`. See `python -m incgraph <command> --help`.
+
+[run]
+seed = 42
+data_dir = "data"               # synthetic episodes, ground truth and gold questions (committed)
+results_dir = "results"         # metrics, per-question records, graphs, report.md (committed)
+cache = ".cache/llm.sqlite"     # sqlite3 cache of every LLM call
+
+[llm]
+# The Ollama server is shared with a production system that keeps this model loaded with
+# keep_alive -1 and num_ctx 24576. Every request sends keep_alive -1 and the options
+# {num_ctx 24576, temperature 0, seed 42} (plus num_predict); calls are strictly sequential,
+# and a failed call backs off 20 s, 60 s, 180 s before giving up.
+base_url = "http://localhost:11434"
+model = "qwen2.5-coder:7b"
+timeout_s = 600
+
+[hybrid]
+top_k = 8              # episodes given to the answerer
+candidates = 30        # depth of the BM25 and LSA lists fed to RRF
+rrf_k = 60             # Cormack et al. 2009
+lsa_dims = 32          # about 45 episodes per broker
+
+[graph_retrieval]
+max_lines = 70         # fact lines in the context
+hop2 = 25              # second-hop facts kept, ranked by BM25
+search = 10            # BM25 over all fact lines, as a net for linking failures
+max_reports = 3        # community reports (batch graph only)
+
+[batch]
+min_community = 3      # communities with fewer entities get no report
+summary_tokens = 120
+
+[answer]
+max_tokens = 60
+
+[cost]
+new_fraction = 0.25    # the last quarter of every broker's stream counts as "new episodes"
