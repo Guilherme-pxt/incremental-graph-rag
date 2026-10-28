@@ -36,3 +36,6 @@ max_tokens = 60
 
 [cost]
 new_fraction = 0.25    # the last quarter of every broker's stream counts as "new episodes"
+
+[incremental]
+structured_queries = true   # the four multi-hop question forms answered by a deterministic graph query (query.py)

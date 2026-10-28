@@ -18,6 +18,10 @@ with LSA standing in for a neural embedder because the local Ollama refuses
    per building (current values, or every value with its date in the batch
    graph), because list and count questions need all of them, not the top k;
 5. the batch graph adds the reports of the linked entities' communities.
+In the incremental graph, current facts come first and superseded values sit in
+a separate "History" section, each line with its validity label before the
+value; and the four multi-hop question forms of the gold set are answered by a
+deterministic query (``query.py``) before any of the above.
 Every fact line carries the episode ids it came from, so answers can cite them.
 """
 
@@ -139,8 +143,10 @@ TABLE_TRIGGERS = ("my clients", "of my client", "how many", "which clients")
 
 class GraphRetriever:
     def __init__(self, graph, reports: dict[int, str] | None = None, membership: dict[str, int] | None = None,
-                 max_lines: int = 70, hop2: int = 25, search: int = 10, max_reports: int = 3):
+                 max_lines: int = 70, hop2: int = 25, search: int = 10, max_reports: int = 3,
+                 structured: bool = False):
         self.g = graph
+        self.structured = structured  # try the deterministic multi-hop query first (query.py)
         self.reports = reports or {}
         self.membership = membership or {}
         self.max_lines, self.hop2, self.search_k, self.max_reports = max_lines, hop2, search, max_reports
@@ -154,6 +160,11 @@ class GraphRetriever:
         return sorted(edge_ids, key=lambda i: (-float(s[i]), i))[:k]
 
     def context(self, question: str) -> tuple[str, list[str], dict]:
+        if self.structured:
+            from .query import Query
+            computed = Query(self.g).context(question)
+            if computed is not None:
+                return computed
         g = self.g
         seeds = link(g, question)
         hop1 = sorted({e["id"] for n in seeds for e in g.edges_of(n)})
@@ -169,13 +180,22 @@ class GraphRetriever:
             label = "current values" if g.temporal else "every value with the date it was first stated"
             sections.append(f"All clients ({label}):\n" + "\n".join(g.summary_row(n) for n in g.of_type("client")))
             sections.append(f"All buildings ({label}):\n" + "\n".join(g.summary_row(n) for n in g.of_type("building")))
-        lines, seen = [], set()
+        lines, seen, order = [], set(), []
         for i in hop1 + hop2 + found:
             if i not in seen and len(lines) < self.max_lines:
                 seen.add(i)
+                order.append(i)
                 lines.append(self.texts[i])
-        if lines:
+        if lines and not g.temporal:
             sections.append("Facts (subject | predicate | object | validity):\n" + "\n".join(lines))
+        elif lines:
+            # current facts first; superseded values in their own section, still there for "as of" questions
+            hist = [i for i in seen if g.edges[i]["valid_to"] is not None]
+            cur = [self.texts[i] for i in order if i not in hist]
+            sections.append("Facts (current values; subject | predicate | object):\n" + "\n".join(cur))
+            if hist:
+                sections.append("History (superseded values, kept for questions about a past date):\n"
+                                + "\n".join(self.texts[i] for i in order if i in hist))
         comms = [self.membership[n] for n in seeds if n in self.membership]
         reports = [c for c in dict.fromkeys(comms) if c in self.reports][: self.max_reports]
         if reports:

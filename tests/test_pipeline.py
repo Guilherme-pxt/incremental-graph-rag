@@ -129,9 +129,35 @@ class RetrievalTests(unittest.TestCase):
         ctx, cited, info = GraphRetriever(self.ig.graph).context("What is Katherine Moreau's budget now?")
         self.assertEqual(info["linked"], ["Katherine Moreau"])
         self.assertIn("| budget |", ctx)
-        self.assertIn("current, since", ctx)
-        self.assertIn("superseded: held from", ctx)
+        current, history = ctx.split("History (superseded values")
+        self.assertIn("current since", current)
+        self.assertNotIn("superseded", current.split("\n", 1)[1])  # no superseded line among current facts
+        self.assertIn("superseded, held", history)
         self.assertTrue(cited)
+
+    def test_multi_hop_forms_are_answered_by_the_query_and_match_gold(self):
+        from incgraph.query import Query
+        n = 0
+        for q in self.data["questions"]:
+            out = Query(self.ig.graph).run(q["question"]) if q["broker"] == "a" else None
+            if q["broker"] != "a":
+                continue
+            self.assertEqual(out is not None, q["type"] == "multi_hop", q["id"])
+            if out:
+                n += 1
+                self.assertTrue(all(atom_in(a, out[2]) for a in q["required"]), q["id"])
+                self.assertFalse(any(atom_in(a, out[2]) for a in q["forbidden"]), q["id"])
+        self.assertEqual(n, 4)
+
+    def test_structured_context_carries_result_and_evidence(self):
+        q = "Which of my clients are currently interested in a building near Harbor Central station?"
+        ctx, cited, info = GraphRetriever(self.ig.graph, structured=True).context(q)
+        self.assertTrue(ctx.startswith("Computed from the graph"))
+        self.assertIn("Result: ", ctx)
+        self.assertIn("near_station | Harbor Central", ctx)
+        self.assertTrue(cited)
+        _, _, plain = GraphRetriever(self.ig.graph, structured=False).context(q)
+        self.assertNotIn("computed", plain)
 
     def test_tables_for_questions_about_all_clients(self):
         _, _, info = GraphRetriever(self.ig.graph).context("How many of my clients want 2 bedrooms right now?")

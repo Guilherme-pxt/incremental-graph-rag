@@ -1,0 +1,575 @@
+{
+ "batch_graph": {
+  "overall": {
+   "by_type": {
+    "building": {
+     "duplication_rate": 0.5555555555555556,
+     "entities_split": 9,
+     "entity_recall": 1.0,
+     "nodes": 28,
+     "true_entities": 18
+    },
+    "client": {
+     "duplication_rate": 0.8571428571428571,
+     "entities_split": 17,
+     "entity_recall": 1.0,
+     "nodes": 39,
+     "true_entities": 21
+    },
+    "place": {
+     "duplication_rate": 0.0,
+     "entities_split": 0,
+     "entity_recall": 1.0,
+     "nodes": 38,
+     "true_entities": 38
+    }
+   },
+   "closed": 0,
+   "closed_with_exact_date": 0,
+   "current_value_accuracy": 0.8153846153846154,
+   "duplication_rate": 0.36363636363636354,
+   "edges": 303,
+   "latest_stated_accuracy": 0.9794871794871794,
+   "nodes": 106,
+   "relation_counts": {
+    "correct": 287,
+    "found": 287,
+    "graph": 297,
+    "true": 291
+   },
+   "relation_precision": 0.9663299663299664,
+   "relation_recall": 0.9862542955326461,
+   "slots": 195,
+   "slots_with_conflicting_open_values": 32,
+   "superseded_facts": 33,
+   "unmapped_nodes": 1,
+   "wrong_merge_rate": 0.0,
+   "wrong_merges": 0
+  },
+  "per_broker": {
+   "a": {
+    "by_type": {
+     "building": {
+      "duplication_rate": 0.6666666666666666,
+      "entities_split": 3,
+      "entity_recall": 1.0,
+      "nodes": 10,
+      "true_entities": 6
+     },
+     "client": {
+      "duplication_rate": 1.0,
+      "entities_split": 7,
+      "entity_recall": 1.0,
+      "nodes": 14,
+      "true_entities": 7
+     },
+     "place": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 13,
+      "true_entities": 13
+     }
+    },
+    "closed": 0,
+    "closed_with_exact_date": 0,
+    "current_value_accuracy": 0.8461538461538461,
+    "duplication_rate": 0.4230769230769231,
+    "edges": 101,
+    "latest_stated_accuracy": 1.0,
+    "nodes": 37,
+    "relation_counts": {
+     "correct": 96,
+     "found": 96,
+     "graph": 97,
+     "true": 96
+    },
+    "relation_precision": 0.9896907216494846,
+    "relation_recall": 1.0,
+    "slots": 65,
+    "slots_with_conflicting_open_values": 10,
+    "superseded_facts": 11,
+    "unmapped_nodes": 0,
+    "wrong_merge_rate": 0.0,
+    "wrong_merges": 0
+   },
+   "b": {
+    "by_type": {
+     "building": {
+      "duplication_rate": 0.5,
+      "entities_split": 3,
+      "entity_recall": 1.0,
+      "nodes": 9,
+      "true_entities": 6
+     },
+     "client": {
+      "duplication_rate": 0.7142857142857143,
+      "entities_split": 5,
+      "entity_recall": 1.0,
+      "nodes": 12,
+      "true_entities": 7
+     },
+     "place": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 12,
+      "true_entities": 12
+     }
+    },
+    "closed": 0,
+    "closed_with_exact_date": 0,
+    "current_value_accuracy": 0.8153846153846154,
+    "duplication_rate": 0.32,
+    "edges": 100,
+    "latest_stated_accuracy": 0.9692307692307692,
+    "nodes": 33,
+    "relation_counts": {
+     "correct": 94,
+     "found": 94,
+     "graph": 98,
+     "true": 96
+    },
+    "relation_precision": 0.9591836734693877,
+    "relation_recall": 0.9791666666666666,
+    "slots": 65,
+    "slots_with_conflicting_open_values": 10,
+    "superseded_facts": 11,
+    "unmapped_nodes": 0,
+    "wrong_merge_rate": 0.0,
+    "wrong_merges": 0
+   },
+   "c": {
+    "by_type": {
+     "building": {
+      "duplication_rate": 0.5,
+      "entities_split": 3,
+      "entity_recall": 1.0,
+      "nodes": 9,
+      "true_entities": 6
+     },
+     "client": {
+      "duplication_rate": 0.8571428571428571,
+      "entities_split": 5,
+      "entity_recall": 1.0,
+      "nodes": 13,
+      "true_entities": 7
+     },
+     "place": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 13,
+      "true_entities": 13
+     }
+    },
+    "closed": 0,
+    "closed_with_exact_date": 0,
+    "current_value_accuracy": 0.7846153846153846,
+    "duplication_rate": 0.34615384615384615,
+    "edges": 102,
+    "latest_stated_accuracy": 0.9692307692307692,
+    "nodes": 36,
+    "relation_counts": {
+     "correct": 97,
+     "found": 97,
+     "graph": 102,
+     "true": 99
+    },
+    "relation_precision": 0.9509803921568627,
+    "relation_recall": 0.9797979797979798,
+    "slots": 65,
+    "slots_with_conflicting_open_values": 12,
+    "superseded_facts": 11,
+    "unmapped_nodes": 1,
+    "wrong_merge_rate": 0.0,
+    "wrong_merges": 0
+   }
+  }
+ },
+ "incremental_graph": {
+  "overall": {
+   "by_type": {
+    "building": {
+     "duplication_rate": 0.1111111111111111,
+     "entities_split": 2,
+     "entity_recall": 1.0,
+     "nodes": 20,
+     "true_entities": 18
+    },
+    "client": {
+     "duplication_rate": 0.0,
+     "entities_split": 0,
+     "entity_recall": 1.0,
+     "nodes": 21,
+     "true_entities": 21
+    },
+    "place": {
+     "duplication_rate": 0.0,
+     "entities_split": 0,
+     "entity_recall": 1.0,
+     "nodes": 38,
+     "true_entities": 38
+    }
+   },
+   "closed": 33,
+   "closed_with_exact_date": 33,
+   "current_value_accuracy": 0.9794871794871794,
+   "duplication_rate": 0.025974025974025983,
+   "edges": 299,
+   "latest_stated_accuracy": 0.9794871794871794,
+   "nodes": 80,
+   "relation_counts": {
+    "correct": 287,
+    "found": 287,
+    "graph": 297,
+    "true": 291
+   },
+   "relation_precision": 0.9663299663299664,
+   "relation_recall": 0.9862542955326461,
+   "slots": 195,
+   "slots_with_conflicting_open_values": 0,
+   "superseded_facts": 33,
+   "unmapped_nodes": 1,
+   "wrong_merge_rate": 0.0,
+   "wrong_merges": 0
+  },
+  "per_broker": {
+   "a": {
+    "by_type": {
+     "building": {
+      "duplication_rate": 0.16666666666666666,
+      "entities_split": 1,
+      "entity_recall": 1.0,
+      "nodes": 7,
+      "true_entities": 6
+     },
+     "client": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 7,
+      "true_entities": 7
+     },
+     "place": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 13,
+      "true_entities": 13
+     }
+    },
+    "closed": 11,
+    "closed_with_exact_date": 11,
+    "current_value_accuracy": 1.0,
+    "duplication_rate": 0.038461538461538464,
+    "edges": 98,
+    "latest_stated_accuracy": 1.0,
+    "nodes": 27,
+    "relation_counts": {
+     "correct": 96,
+     "found": 96,
+     "graph": 97,
+     "true": 96
+    },
+    "relation_precision": 0.9896907216494846,
+    "relation_recall": 1.0,
+    "slots": 65,
+    "slots_with_conflicting_open_values": 0,
+    "superseded_facts": 11,
+    "unmapped_nodes": 0,
+    "wrong_merge_rate": 0.0,
+    "wrong_merges": 0
+   },
+   "b": {
+    "by_type": {
+     "building": {
+      "duplication_rate": 0.16666666666666666,
+      "entities_split": 1,
+      "entity_recall": 1.0,
+      "nodes": 7,
+      "true_entities": 6
+     },
+     "client": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 7,
+      "true_entities": 7
+     },
+     "place": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 12,
+      "true_entities": 12
+     }
+    },
+    "closed": 11,
+    "closed_with_exact_date": 11,
+    "current_value_accuracy": 0.9692307692307692,
+    "duplication_rate": 0.04,
+    "edges": 99,
+    "latest_stated_accuracy": 0.9692307692307692,
+    "nodes": 26,
+    "relation_counts": {
+     "correct": 94,
+     "found": 94,
+     "graph": 98,
+     "true": 96
+    },
+    "relation_precision": 0.9591836734693877,
+    "relation_recall": 0.9791666666666666,
+    "slots": 65,
+    "slots_with_conflicting_open_values": 0,
+    "superseded_facts": 11,
+    "unmapped_nodes": 0,
+    "wrong_merge_rate": 0.0,
+    "wrong_merges": 0
+   },
+   "c": {
+    "by_type": {
+     "building": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 6,
+      "true_entities": 6
+     },
+     "client": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 7,
+      "true_entities": 7
+     },
+     "place": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 13,
+      "true_entities": 13
+     }
+    },
+    "closed": 11,
+    "closed_with_exact_date": 11,
+    "current_value_accuracy": 0.9692307692307692,
+    "duplication_rate": 0.0,
+    "edges": 102,
+    "latest_stated_accuracy": 0.9692307692307692,
+    "nodes": 27,
+    "relation_counts": {
+     "correct": 97,
+     "found": 97,
+     "graph": 102,
+     "true": 99
+    },
+    "relation_precision": 0.9509803921568627,
+    "relation_recall": 0.9797979797979798,
+    "slots": 65,
+    "slots_with_conflicting_open_values": 0,
+    "superseded_facts": 11,
+    "unmapped_nodes": 1,
+    "wrong_merge_rate": 0.0,
+    "wrong_merges": 0
+   }
+  }
+ },
+ "incremental_no_llm_merge": {
+  "overall": {
+   "by_type": {
+    "building": {
+     "duplication_rate": 0.05555555555555555,
+     "entities_split": 1,
+     "entity_recall": 1.0,
+     "nodes": 19,
+     "true_entities": 18
+    },
+    "client": {
+     "duplication_rate": 0.0,
+     "entities_split": 0,
+     "entity_recall": 1.0,
+     "nodes": 21,
+     "true_entities": 21
+    },
+    "place": {
+     "duplication_rate": 0.0,
+     "entities_split": 0,
+     "entity_recall": 1.0,
+     "nodes": 38,
+     "true_entities": 38
+    }
+   },
+   "closed": 33,
+   "closed_with_exact_date": 33,
+   "current_value_accuracy": 0.9794871794871794,
+   "duplication_rate": 0.01298701298701288,
+   "edges": 298,
+   "latest_stated_accuracy": 0.9794871794871794,
+   "nodes": 79,
+   "relation_counts": {
+    "correct": 287,
+    "found": 287,
+    "graph": 297,
+    "true": 291
+   },
+   "relation_precision": 0.9663299663299664,
+   "relation_recall": 0.9862542955326461,
+   "slots": 195,
+   "slots_with_conflicting_open_values": 0,
+   "superseded_facts": 33,
+   "unmapped_nodes": 1,
+   "wrong_merge_rate": 0.0,
+   "wrong_merges": 0
+  },
+  "per_broker": {
+   "a": {
+    "by_type": {
+     "building": {
+      "duplication_rate": 0.16666666666666666,
+      "entities_split": 1,
+      "entity_recall": 1.0,
+      "nodes": 7,
+      "true_entities": 6
+     },
+     "client": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 7,
+      "true_entities": 7
+     },
+     "place": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 13,
+      "true_entities": 13
+     }
+    },
+    "closed": 11,
+    "closed_with_exact_date": 11,
+    "current_value_accuracy": 1.0,
+    "duplication_rate": 0.038461538461538464,
+    "edges": 98,
+    "latest_stated_accuracy": 1.0,
+    "nodes": 27,
+    "relation_counts": {
+     "correct": 96,
+     "found": 96,
+     "graph": 97,
+     "true": 96
+    },
+    "relation_precision": 0.9896907216494846,
+    "relation_recall": 1.0,
+    "slots": 65,
+    "slots_with_conflicting_open_values": 0,
+    "superseded_facts": 11,
+    "unmapped_nodes": 0,
+    "wrong_merge_rate": 0.0,
+    "wrong_merges": 0
+   },
+   "b": {
+    "by_type": {
+     "building": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 6,
+      "true_entities": 6
+     },
+     "client": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 7,
+      "true_entities": 7
+     },
+     "place": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 12,
+      "true_entities": 12
+     }
+    },
+    "closed": 11,
+    "closed_with_exact_date": 11,
+    "current_value_accuracy": 0.9692307692307692,
+    "duplication_rate": 0.0,
+    "edges": 98,
+    "latest_stated_accuracy": 0.9692307692307692,
+    "nodes": 25,
+    "relation_counts": {
+     "correct": 94,
+     "found": 94,
+     "graph": 98,
+     "true": 96
+    },
+    "relation_precision": 0.9591836734693877,
+    "relation_recall": 0.9791666666666666,
+    "slots": 65,
+    "slots_with_conflicting_open_values": 0,
+    "superseded_facts": 11,
+    "unmapped_nodes": 0,
+    "wrong_merge_rate": 0.0,
+    "wrong_merges": 0
+   },
+   "c": {
+    "by_type": {
+     "building": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 6,
+      "true_entities": 6
+     },
+     "client": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 7,
+      "true_entities": 7
+     },
+     "place": {
+      "duplication_rate": 0.0,
+      "entities_split": 0,
+      "entity_recall": 1.0,
+      "nodes": 13,
+      "true_entities": 13
+     }
+    },
+    "closed": 11,
+    "closed_with_exact_date": 11,
+    "current_value_accuracy": 0.9692307692307692,
+    "duplication_rate": 0.0,
+    "edges": 102,
+    "latest_stated_accuracy": 0.9692307692307692,
+    "nodes": 27,
+    "relation_counts": {
+     "correct": 97,
+     "found": 97,
+     "graph": 102,
+     "true": 99
+    },
+    "relation_precision": 0.9509803921568627,
+    "relation_recall": 0.9797979797979798,
+    "slots": 65,
+    "slots_with_conflicting_open_values": 0,
+    "superseded_facts": 11,
+    "unmapped_nodes": 1,
+    "wrong_merge_rate": 0.0,
+    "wrong_merges": 0
+   }
+  }
+ },
+ "incremental_resolution_routes": {
+  "exact": 119,
+  "llm": 3,
+  "llm-new": 1,
+  "new": 58,
+  "rule": 10,
+  "thread": 38,
+  "thread-new": 21
+ }
+}

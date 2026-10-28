@@ -110,7 +110,8 @@ def contexts(cfg: dict, systems: dict, q: dict) -> dict[str, tuple[str, list[str
     gr = GraphRetriever(bt["graph"], bt["reports"], bt["membership"], **cfg["graph_retrieval"])
     res["batch_graph"] = gr.context(q["question"])
     ig = systems["incremental"][b]
-    res["incremental_graph"] = GraphRetriever(ig.graph, **cfg["graph_retrieval"]).context(q["question"])
+    res["incremental_graph"] = GraphRetriever(ig.graph, structured=cfg.get("incremental", {}).get(
+        "structured_queries", True), **cfg["graph_retrieval"]).context(q["question"])
     if q["type"] == "isolation":
         ctx, ids = systems["hybrid_shared"].context(q["question"], k)
         res["hybrid_shared_index"] = (ctx, ids, {})

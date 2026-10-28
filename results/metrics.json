@@ -11,19 +11,19 @@
   },
   "incremental_graph vs batch_graph": {
    "ci95": [
-    0.04938271604938271,
-    0.2222222222222222
+    0.14814814814814814,
+    0.3950617283950617
    ],
-   "delta": 0.1358024691358024,
+   "delta": 0.2716049382716049,
    "excludes_zero": true,
    "n": 81
   },
   "incremental_graph vs hybrid": {
    "ci95": [
-    0.024691358024691357,
-    0.2222222222222222
+    0.16049382716049382,
+    0.37037037037037035
    ],
-   "delta": 0.12345679012345678,
+   "delta": 0.2592592592592593,
    "excludes_zero": true,
    "n": 81
   }
@@ -70,24 +70,24 @@
    "wrong_period_rate_as_of": 0.25
   },
   "incremental_graph": {
-   "accuracy": 0.7407407407407407,
-   "answerable_accuracy": 0.6666666666666666,
+   "accuracy": 0.8765432098765432,
+   "answerable_accuracy": 0.8412698412698413,
    "ci95": [
-    0.6419753086419753,
-    0.8271604938271605
+    0.8024691358024691,
+    0.9382716049382716
    ],
    "declined_isolation": 1.0,
    "declined_unanswerable": 1.0,
-   "false_idk_rate": 0.047619047619047616,
+   "false_idk_rate": 0.06349206349206349,
    "isolation_confusions": 0,
    "isolation_leaks": 0,
-   "median_answer_latency_s": 5.956930291984463,
-   "median_prompt_tokens": 1266,
+   "median_answer_latency_s": 2.9489167080027983,
+   "median_prompt_tokens": 1140,
    "n": 81,
    "n_now_with_history": 21,
-   "stale_rate_now": 0.3333333333333333,
-   "supported_share_of_correct": 1.0,
-   "wrong_period_rate_as_of": 0.25
+   "stale_rate_now": 0.0,
+   "supported_share_of_correct": 0.9811320754716981,
+   "wrong_period_rate_as_of": 0.0
   }
  },
  "per_type": {
@@ -153,11 +153,11 @@
   },
   "incremental_graph": {
    "aggregation": {
-    "accuracy": 0.6666666666666666,
+    "accuracy": 0.3333333333333333,
     "n": 9
    },
    "as_of": {
-    "accuracy": 0.5,
+    "accuracy": 0.6666666666666666,
     "n": 12
    },
    "isolation": {
@@ -165,7 +165,7 @@
     "n": 9
    },
    "multi_hop": {
-    "accuracy": 0.16666666666666666,
+    "accuracy": 1.0,
     "n": 12
    },
    "single_hop": {
@@ -173,7 +173,7 @@
     "n": 15
    },
    "temporal_current": {
-    "accuracy": 0.8666666666666667,
+    "accuracy": 1.0,
     "n": 15
    },
    "unanswerable": {
@@ -251,19 +251,19 @@
   "incremental_graph vs batch_graph": {
    "aggregation": {
     "ci95": [
-     0.0,
-     0.5555555555555556
+     -0.4444444444444444,
+     0.2222222222222222
     ],
-    "delta": 0.2222222222222222,
+    "delta": -0.1111111111111111,
     "excludes_zero": false,
     "n": 9
    },
    "as_of": {
     "ci95": [
      0.0,
-     0.5
+     0.8333333333333334
     ],
-    "delta": 0.25,
+    "delta": 0.41666666666666663,
     "excludes_zero": false,
     "n": 12
    },
@@ -278,11 +278,11 @@
    },
    "multi_hop": {
     "ci95": [
-     0.0,
-     0.4166666666666667
+     1.0,
+     1.0
     ],
-    "delta": 0.16666666666666666,
-    "excludes_zero": false,
+    "delta": 1.0,
+    "excludes_zero": true,
     "n": 12
    },
    "single_hop": {
@@ -296,11 +296,11 @@
    },
    "temporal_current": {
     "ci95": [
-     -0.13333333333333333,
-     0.5333333333333333
+     0.13333333333333333,
+     0.6
     ],
-    "delta": 0.20000000000000007,
-    "excludes_zero": false,
+    "delta": 0.33333333333333337,
+    "excludes_zero": true,
     "n": 15
    },
    "unanswerable": {
@@ -316,19 +316,19 @@
   "incremental_graph vs hybrid": {
    "aggregation": {
     "ci95": [
-     0.3333333333333333,
-     1.0
+     0.1111111111111111,
+     0.6666666666666666
     ],
-    "delta": 0.6666666666666666,
+    "delta": 0.3333333333333333,
     "excludes_zero": true,
     "n": 9
    },
    "as_of": {
     "ci95": [
-     -0.25,
-     0.5
+     -0.08333333333333333,
+     0.75
     ],
-    "delta": 0.16666666666666669,
+    "delta": 0.3333333333333333,
     "excludes_zero": false,
     "n": 12
    },
@@ -343,11 +343,11 @@
    },
    "multi_hop": {
     "ci95": [
-     0.0,
-     0.25
+     0.75,
+     1.0
     ],
-    "delta": 0.08333333333333333,
-    "excludes_zero": false,
+    "delta": 0.9166666666666666,
+    "excludes_zero": true,
     "n": 12
    },
    "single_hop": {
@@ -361,10 +361,10 @@
    },
    "temporal_current": {
     "ci95": [
-     -0.26666666666666666,
-     0.13333333333333333
+     0.0,
+     0.2
     ],
-    "delta": -0.06666666666666665,
+    "delta": 0.06666666666666665,
     "excludes_zero": false,
     "n": 15
    },

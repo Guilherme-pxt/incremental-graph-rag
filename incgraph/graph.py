@@ -124,12 +124,16 @@ class Graph:
 
     def fact_text(self, e: dict) -> str:
         cites = "".join(f"[{x}]" for x in e["episodes"][:3])
-        base = f"{cites} {self.nodes[e['src']]['name']} | {e['pred']} | {self.obj_text(e)}"
-        if not self.temporal or e["pred"] in MULTI:  # events and set members have dates, not validity
-            return f"{base} | stated {', '.join(sorted(set(e['dates'])))}"
+        triple = f"{self.nodes[e['src']]['name']} | {e['pred']} | {self.obj_text(e)}"
+        dates = ", ".join(sorted(set(e["dates"])))
+        if not self.temporal:  # the batch graph: every fact with the dates it was stated
+            return f"{cites} {triple} | stated {dates}"
+        # temporal graph: the validity label comes before the value, so it is read first
+        if e["pred"] in MULTI:  # events and set members have dates, not validity
+            return f"{cites} stated {dates}: {triple}"
         if e["valid_to"] is None:
-            return f"{base} | current, since {e['valid_from']}"
-        return f"{base} | superseded: held from {e['valid_from']} to {e['valid_to']}"
+            return f"{cites} current since {e['valid_from']}: {triple}"
+        return f"{cites} superseded, held {e['valid_from']} to {e['valid_to']}: {triple}"
 
     def summary_row(self, nid: str) -> str:
         """One line per entity for the type tables: current values (temporal) or every value with its dates."""

@@ -87,7 +87,8 @@ class GraphTests(unittest.TestCase):
                                                                                     ["a-001", "a-002"]))
         self.assertIsNone(new["valid_to"])
         self.assertEqual(g.open_edges(c, "budget"), [new])
-        self.assertIn("superseded: held from 2026-01-01 to 2026-02-01", g.fact_text(old))
+        self.assertTrue(g.fact_text(old).startswith("[a-001][a-002] superseded, held 2026-01-01 to 2026-02-01: "))
+        self.assertTrue(g.fact_text(new).startswith("[a-003] current since 2026-02-01: Kate Moreau | budget"))
 
     def test_multi_valued_facts_accumulate(self):
         g = Graph("a", temporal=True)
@@ -103,7 +104,7 @@ class GraphTests(unittest.TestCase):
         g.assert_fact(c, "budget", 800000, "a-001", "2026-01-01")
         g.assert_fact(c, "budget", 950000, "a-003", "2026-02-01")
         self.assertEqual([e["valid_to"] for e in g.edges], [None, None])
-        self.assertIn("stated 2026-02-01", g.fact_text(g.edges[1]))
+        self.assertEqual(g.fact_text(g.edges[1]), "[a-003] Kate | budget | $950,000 | stated 2026-02-01")
 
     def test_louvain_two_triangles(self):
         e = [("a", "b", 1), ("b", "c", 1), ("a", "c", 1), ("d", "e", 1), ("e", "f", 1), ("d", "f", 1), ("c", "d", 1)]
